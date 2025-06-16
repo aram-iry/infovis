@@ -132,3 +132,7 @@
   --pst-icon-versionmodified-changed: var(--pst-icon-exclamation-circle);
   --pst-icon-versionmodified-deprecated: var(--pst-icon-exclamation-circle);
 }
+/* Hide Xrun text in outputs */
+.xr-text-repr-fallback {
+    display: none !important;
+}
