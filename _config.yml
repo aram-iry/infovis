@@ -25,6 +25,12 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  theme:
+    name: pydata_sphinx_theme
+    toggle:
+      icon: "sun"
+      show: false
+    default_mode: "light"
 
 # Add launch buttons
 launch_buttons:
