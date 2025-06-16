@@ -4,4 +4,5 @@
 format: jb-book
 root: docs/introduction
 chapters:
-- file: docs/story
+- file: docs/dataset_and_preprocessing
+- file: notebooks/story
