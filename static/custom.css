@@ -21,3 +21,17 @@
 .bd-sidebar {
   background-color: rgb(var(--pst-color-primary)) !important;
 }
+
+/* Zorg voor ruimte tussen logo en titel */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Afstand tussen logo en titel */
+}
+
+/* Titel zichtbaar maken */
+.navbar-brand .navbar-title {
+    display: inline-block !important;
+    font-size: 1.2rem;
+    color: #333; /* Kleur aanpassen indien nodig */
+}
