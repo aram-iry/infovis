@@ -1,6 +1,6 @@
 # Work Distribution
 
-As a team we communicated mostly by meeting up and text, other than that we communicated at
+As a team we communicated mostly by meeting up and text, but also by seeing each other at
 seminars. In our first meeting (aimed to create our proposal), we sat down and searched for
 datasets together, which we could base our project off of. Our initial idea was to create something
 related to whales, which we were fortunate enough to actually fulfill. With this subject in mind we
