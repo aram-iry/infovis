@@ -13,6 +13,14 @@ Variables we extracted from all of our datasets can be classified under multiple
 - Nominal / Discrete: `Population Trend`, `Red List Category`, `Species (or group)`
 - Continuous / Ratio: `Longitude`, `Latitude`, `Observed Mortality Rate (per set)`
 
+Further explanation of variables:
+
+- `Population Trend` (Unknown, Increasing, Stable, Decreasing): Shows recovery or decline of speies.
+- `Red List Category` (Least Concern, Vulnerable, Endangered, Near Threatened, Data Deficient, Critically Endangered, Extinct, Extinct in the Wild): Shows the endangerment the whale species are currently experiencing.
+- `Species (or group)`: Simply the species of the whales found to be affected by bycatch.
+- `Longitude` & `Latitude`: The coordinates of where these whales were found to be affected by bycatch.
+- `Observed Mortality Rate (per set)`: The known rate by which whales are killed because of bycatch.
+
 ## Aggregations
 
 For some datasets, aggregating was not necessary as they were usable in their original form. 
