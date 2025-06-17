@@ -40,12 +40,21 @@ sphinx:
     - "IPython.sphinxext.ipython_console_highlighting"
     - myst_nb
   config:
+    nb_render_priority:
+      - "html"
+      - "pdf"
     html_context:
       default_mode: 'light'
     html_static_path: ['../static']
     html_css_files: ["custom.css"] 
     html_js_files:
       - enforce-light-theme.js
+
+hide_code_cells:
+  remove_input: true  # Hide all input cells by default
+  remove_output: false
+  remove_prompt: false
+
 
       # This is for plotly to work
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js

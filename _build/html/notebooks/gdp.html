@@ -422,7 +422,311 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+
+<span class="c1"># Read the CSV file with proper parameters</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/capture_fisheries.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># Skip the header rows</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>  <span class="c1"># Drop empty rows</span>
+
+<span class="c1"># Melt the DataFrame to transform years into rows</span>
+<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1960</span><span class="p">,</span> <span class="mi">2025</span><span class="p">)]</span>
+<span class="n">df_melted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span>
+    <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Country Code&quot;</span><span class="p">,</span> <span class="s2">&quot;Indicator Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Indicator Code&quot;</span><span class="p">],</span>
+    <span class="n">value_vars</span><span class="o">=</span><span class="n">years</span><span class="p">,</span>
+    <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span>
+    <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;Capture Production (metric tons)&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Convert to numeric and clean data</span>
+<span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">])</span>
+<span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span>
+    <span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span>
+<span class="p">)</span>
+<span class="n">df_melted</span> <span class="o">=</span> <span class="n">df_melted</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">])</span>
+
+<span class="c1"># Calculate world totals by year</span>
+<span class="n">world_totals</span> <span class="o">=</span> <span class="n">df_melted</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)[</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Create the visualization</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span>
+    <span class="n">world_totals</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;World Total Capture Fisheries Production (1960-2024)&#39;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Capture Production (metric tons)&#39;</span><span class="p">:</span> <span class="s1">&#39;Total Capture (metric tons)&#39;</span><span class="p">},</span>
+    <span class="n">markers</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># Customize the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Total Capture Production (metric tons)&#39;</span><span class="p">,</span>
+    <span class="n">hovermode</span><span class="o">=</span><span class="s1">&#39;x unified&#39;</span><span class="p">,</span>
+    <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span>
+    <span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Year:&lt;/b&gt; %</span><span class="si">{x}</span><span class="s1">&lt;br&gt;&lt;b&gt;Total Capture:&lt;/b&gt; %</span><span class="si">{y:,}</span><span class="s1"> metric tons&#39;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">plotly.subplots</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_subplots</span>
+
+<span class="c1"># Load and preprocess data</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/capture_fisheries.csv&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+
+<span class="c1"># Clean data</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1960</span><span class="p">,</span> <span class="mi">2025</span><span class="p">)]</span>
+<span class="n">id_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Country Code&quot;</span><span class="p">,</span> <span class="s2">&quot;Indicator Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Indicator Code&quot;</span><span class="p">]</span>
+
+<span class="c1"># Melt data</span>
+<span class="n">df_melted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="n">id_vars</span><span class="p">,</span> <span class="n">value_vars</span><span class="o">=</span><span class="n">years</span><span class="p">,</span> 
+                   <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;Production&quot;</span><span class="p">)</span>
+<span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">])</span>
+<span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+<span class="n">df_melted</span> <span class="o">=</span> <span class="n">df_melted</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">])</span>
+
+<span class="c1"># Calculate focused range (exclude extreme outliers)</span>
+<span class="n">q95</span> <span class="o">=</span> <span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="n">focused_data</span> <span class="o">=</span> <span class="n">df_melted</span><span class="p">[</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">q95</span><span class="p">]</span>
+<span class="n">zmax</span> <span class="o">=</span> <span class="n">focused_data</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">zmin</span> <span class="o">=</span> <span class="n">focused_data</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+<span class="c1"># Enhanced color scale with more distinction</span>
+<span class="n">enhanced_scale</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;#E1F5FE&#39;</span><span class="p">],</span>  <span class="c1"># Lightest blue</span>
+    <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="s1">&#39;#B3E5FC&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;#81D4FA&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="s1">&#39;#4FC3F7&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="s1">&#39;#29B6F6&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;#039BE5&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="s1">&#39;#0288D1&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="s1">&#39;#0277BD&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="s1">&#39;#01579B&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="s1">&#39;#0D47A1&#39;</span><span class="p">],</span>  
+    <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;#1d1c47&#39;</span><span class="p">]</span>   <span class="c1"># Darkest blue</span>
+<span class="p">]</span>
+
+<span class="c1"># Create subplots with 2 columns</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span>
+    <span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">specs</span><span class="o">=</span><span class="p">[[{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;choropleth&quot;</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;choropleth&quot;</span><span class="p">}]],</span>
+    <span class="n">subplot_titles</span><span class="o">=</span><span class="p">(</span>
+        <span class="s2">&quot;&lt;b&gt;Total Fisheries Production (1960-2024)&lt;/b&gt;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;&lt;b&gt;Annual Fisheries Production&lt;/b&gt;&quot;</span>
+    <span class="p">),</span>
+    <span class="n">horizontal_spacing</span><span class="o">=</span><span class="mf">0.05</span>
+<span class="p">)</span>
+
+<span class="c1"># 1. Add static total production map (left)</span>
+<span class="n">total_production</span> <span class="o">=</span> <span class="n">df_melted</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Country Code&#39;</span><span class="p">])[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Choropleth</span><span class="p">(</span>
+        <span class="n">locations</span><span class="o">=</span><span class="n">total_production</span><span class="p">[</span><span class="s1">&#39;Country Code&#39;</span><span class="p">],</span>
+        <span class="n">z</span><span class="o">=</span><span class="n">total_production</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">],</span>
+        <span class="n">colorscale</span><span class="o">=</span><span class="n">enhanced_scale</span><span class="p">,</span>
+        <span class="n">zmin</span><span class="o">=</span><span class="n">zmin</span><span class="p">,</span>
+        <span class="n">zmax</span><span class="o">=</span><span class="n">zmax</span><span class="p">,</span>
+        <span class="n">customdata</span><span class="o">=</span><span class="n">total_production</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]],</span>
+        <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;%</span><span class="si">{customdata[0]}</span><span class="s2">&lt;/b&gt;&lt;br&gt;&quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;Total Production: %</span><span class="si">{z:,}</span><span class="s2"> metric tons&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+        <span class="n">marker_line_color</span><span class="o">=</span><span class="s1">&#39;darkgray&#39;</span><span class="p">,</span>
+        <span class="n">marker_line_width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;Production (tons)&lt;/b&gt;&quot;</span><span class="p">,</span>
+            <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">9</span><span class="p">),</span> 
+            <span class="n">thickness</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+            <span class="nb">len</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="mf">0.45</span><span class="p">,</span>
+            <span class="n">tickvals</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">5e6</span><span class="p">,</span> <span class="mf">10e6</span><span class="p">,</span> <span class="mf">15e6</span><span class="p">],</span>
+            <span class="n">ticktext</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;5M&quot;</span><span class="p">,</span> <span class="s2">&quot;10M&quot;</span><span class="p">,</span> <span class="s2">&quot;15M&quot;</span><span class="p">]</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">)</span>
+
+<span class="c1"># 2. Prepare animated map (right)</span>
+<span class="n">frames</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()):</span>
+    <span class="n">yearly_data</span> <span class="o">=</span> <span class="n">df_melted</span><span class="p">[</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">]</span>
+    <span class="n">yearly_focused</span> <span class="o">=</span> <span class="n">yearly_data</span><span class="p">[</span><span class="n">yearly_data</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">yearly_data</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)]</span>
+    <span class="n">year_zmax</span> <span class="o">=</span> <span class="n">yearly_focused</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">year_zmin</span> <span class="o">=</span> <span class="n">yearly_focused</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    
+    <span class="n">frames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span>
+        <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Choropleth</span><span class="p">(</span>
+            <span class="n">locations</span><span class="o">=</span><span class="n">yearly_data</span><span class="p">[</span><span class="s1">&#39;Country Code&#39;</span><span class="p">],</span>
+            <span class="n">z</span><span class="o">=</span><span class="n">yearly_data</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">],</span>
+            <span class="n">zmin</span><span class="o">=</span><span class="n">year_zmin</span><span class="p">,</span>
+            <span class="n">zmax</span><span class="o">=</span><span class="n">year_zmax</span><span class="p">,</span>
+            <span class="n">colorscale</span><span class="o">=</span><span class="n">enhanced_scale</span><span class="p">,</span>
+            <span class="n">customdata</span><span class="o">=</span><span class="n">yearly_data</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">]],</span>
+            <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;%</span><span class="si">{customdata[0]}</span><span class="s2">&lt;/b&gt;&lt;br&gt;&quot;</span> <span class="o">+</span>
+                         <span class="s2">&quot;Year: %</span><span class="si">{customdata[1]}</span><span class="s2">&lt;br&gt;&quot;</span> <span class="o">+</span>
+                         <span class="s2">&quot;Production: %</span><span class="si">{z:,}</span><span class="s2"> metric tons&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+            <span class="n">marker_line_color</span><span class="o">=</span><span class="s1">&#39;darkgray&#39;</span><span class="p">,</span>
+            <span class="n">marker_line_width</span><span class="o">=</span><span class="mf">0.5</span>
+        <span class="p">)],</span>
+        <span class="n">name</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">),</span>
+        <span class="n">traces</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Only affects the second trace</span>
+    <span class="p">))</span>
+
+<span class="c1"># Add initial trace for the animated map</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+    <span class="n">go</span><span class="o">.</span><span class="n">Choropleth</span><span class="p">(</span>
+        <span class="n">locations</span><span class="o">=</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Country Code&#39;</span><span class="p">],</span>
+        <span class="n">z</span><span class="o">=</span><span class="n">df_melted</span><span class="p">[</span><span class="s1">&#39;Production&#39;</span><span class="p">],</span>
+        <span class="n">colorscale</span><span class="o">=</span><span class="n">enhanced_scale</span><span class="p">,</span>
+        <span class="n">customdata</span><span class="o">=</span><span class="n">df_melted</span><span class="p">[[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">]],</span>
+        <span class="n">hovertemplate</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;%</span><span class="si">{customdata[0]}</span><span class="s2">&lt;/b&gt;&lt;br&gt;&quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;Year: %</span><span class="si">{customdata[1]}</span><span class="s2">&lt;br&gt;&quot;</span> <span class="o">+</span>
+                     <span class="s2">&quot;Production: %</span><span class="si">{z:,}</span><span class="s2"> metric tons&lt;extra&gt;&lt;/extra&gt;&quot;</span><span class="p">,</span>
+        <span class="n">marker_line_color</span><span class="o">=</span><span class="s1">&#39;darkgray&#39;</span><span class="p">,</span>
+        <span class="n">marker_line_width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;Production (tons)&lt;/b&gt;&quot;</span><span class="p">,</span>
+            <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">9</span><span class="p">),</span> 
+            <span class="n">thickness</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+            <span class="nb">len</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+            <span class="n">tickvals</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2e6</span><span class="p">,</span> <span class="mf">4e6</span><span class="p">,</span> <span class="mf">6e6</span><span class="p">,</span> <span class="mf">8e6</span><span class="p">],</span>
+            <span class="n">ticktext</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="s2">&quot;2M&quot;</span><span class="p">,</span> <span class="s2">&quot;4M&quot;</span><span class="p">,</span> <span class="s2">&quot;6M&quot;</span><span class="p">,</span> <span class="s2">&quot;8M&quot;</span><span class="p">]</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="c1"># Update layout for the entire figure</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title_text</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;Global Capture Fisheries Production Analysis&lt;/b&gt;&quot;</span><span class="p">,</span>
+    <span class="n">title_x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">title_font_size</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+    <span class="n">title_pad</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span>
+    <span class="n">geo</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showcoastlines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">landcolor</span><span class="o">=</span><span class="s1">&#39;#f0f0f0&#39;</span><span class="p">,</span>
+        <span class="n">lakecolor</span><span class="o">=</span><span class="s1">&#39;#d0e0f0&#39;</span><span class="p">,</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span>
+        <span class="n">framecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+        <span class="n">framewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">domain</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="p">),</span>
+    <span class="n">geo2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">showframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">showcoastlines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">landcolor</span><span class="o">=</span><span class="s1">&#39;#f0f0f0&#39;</span><span class="p">,</span>
+        <span class="n">lakecolor</span><span class="o">=</span><span class="s1">&#39;#d0e0f0&#39;</span><span class="p">,</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span>
+        <span class="n">framecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+        <span class="n">framewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">domain</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mf">0.55</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="p">),</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+    <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">120</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">150</span><span class="p">},</span>
+    <span class="n">sliders</span><span class="o">=</span><span class="p">[{</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;steps&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[[</span><span class="n">f</span><span class="o">.</span><span class="n">name</span><span class="p">],</span> <span class="p">{</span><span class="s2">&quot;frame&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span> <span class="s2">&quot;redraw&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+                              <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;immediate&quot;</span><span class="p">}],</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="n">f</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;animate&quot;</span>
+        <span class="p">}</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">frames</span><span class="p">],</span>
+        <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mf">0.55</span><span class="p">,</span>
+        <span class="s2">&quot;len&quot;</span><span class="p">:</span> <span class="mf">0.45</span><span class="p">,</span>
+        <span class="s2">&quot;currentvalue&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;b&gt;Year: &lt;/b&gt;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;font&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">},</span>
+            <span class="s2">&quot;xanchor&quot;</span><span class="p">:</span> <span class="s2">&quot;center&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;transition&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">300</span><span class="p">},</span>
+        <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">,</span>
+        <span class="s2">&quot;pad&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;t&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+    <span class="p">}],</span>
+    <span class="n">updatemenus</span><span class="o">=</span><span class="p">[{</span>
+        <span class="s2">&quot;buttons&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;frame&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="s2">&quot;redraw&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+                              <span class="s2">&quot;fromcurrent&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}],</span>
+                <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;▶️ Play&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;animate&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[[</span><span class="kc">None</span><span class="p">],</span> <span class="p">{</span><span class="s2">&quot;frame&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;redraw&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+                                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;immediate&quot;</span><span class="p">}],</span>
+                <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;⏸️ Pause&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;animate&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;buttons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.12</span><span class="p">,</span>
+        <span class="s2">&quot;xanchor&quot;</span><span class="p">:</span> <span class="s2">&quot;right&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;yanchor&quot;</span><span class="p">:</span> <span class="s2">&quot;top&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bgcolor&quot;</span><span class="p">:</span> <span class="s2">&quot;rgba(255,255,255,0.9)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bordercolor&quot;</span><span class="p">:</span> <span class="s2">&quot;#444&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;borderwidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;pad&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;t&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+    <span class="p">}]</span>
+<span class="p">)</span>
+
+<span class="c1"># Add annotations</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+    <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;Total production from 1960-2024 (95</span><span class="si">% r</span><span class="s2">ange focused)&lt;/b&gt;&quot;</span><span class="p">,</span>
+    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#444&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+    <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&lt;b&gt;Annual view with dynamic 95</span><span class="si">% r</span><span class="s2">ange scaling&lt;/b&gt;&quot;</span><span class="p">,</span>
+    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#444&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Set frames for animation</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">frames</span> <span class="o">=</span> <span class="n">frames</span>
+
+<span class="c1"># Make responsive</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">autosize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">hovermode</span><span class="o">=</span><span class="s1">&#39;closest&#39;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
