@@ -20,18 +20,18 @@ The variables we used can be grouped into multiple themes:
     - country (Categorical/Nominal): Country where the fishing/whale activity occurred.
 
 2. Fishing (Capture Production)
-    - total capture production (Numerical/Continuous): Total fish caught (aggregate, e.g., by country/year).
-    - capture production (Numerical/Continuous): Fish catch in a specific context (e.g., by region/species).
+    - total capture production (Numerical/Continuous): Total fish caught.
+    - capture production (Numerical/Continuous): Fish caught in a specific context.
 
 3. Whale-Specific Variables
-    - species (Categorical/Nominal): Whale species involved (if applicable).
-    - amount of whale species (Numerical/Discrete): Number of distinct whale species in a dataset/area.
-    - endangerment classification (Categorical/Ordinal): Conservation status of whales (e.g., "Endangered").
-    - total whale catches (Numerical/Discrete): Total whales captured/harvested (if fishing includes whaling).
+    - species (Categorical/Nominal): Whale species involved.
+    - amount of whale species (Numerical/Discrete): Number of distinct whale species.
+    - endangerment classification (Categorical/Ordinal): Conservation status of whales.
+    - total whale catches (Numerical/Discrete): Total whales captured.
 
 4. Risk & Impact (Whales)
-    - strike risk (Numerical/Continuous or Categorical): Likelihood of vessel strikes on whales (e.g., 5% or "High").
-    - mortality rate (Numerical/Continuous): Death rate of whales (e.g., due to bycatch/ship strikes).
+    - strike risk (Numerical/Continuous or Categorical): Likelihood of vessel strikes on whales.
+    - mortality rate (Numerical/Continuous): Death rate of whales.
       
 ## Aggregations
 
