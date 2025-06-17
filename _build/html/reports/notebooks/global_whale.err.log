@@ -1,0 +1,186 @@
+Traceback (most recent call last):
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 154, in wrapped
+    asyncio.get_running_loop()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 158, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import dash
+from dash import dcc, html, Output, Input
+import plotly.graph_objects as go
+import pandas as pd
+import numpy as np
+
+# ---- LOAD PRE-AGGREGATED DATA ----
+
+whale_data = pd.read_csv("../data/aggregated_whale_data.csv")
+
+# ---- DASH SETUP ----
+
+app = dash.Dash(__name__)
+server = app.server  # for deployment
+
+# Layer map logic
+def create_figure(active_layers):
+    fig = go.Figure()
+
+    fig.add_trace(go.Densitymap(
+        lat=whale_data['lat_bin'],
+        lon=whale_data['lon_bin'],
+        z=whale_data['shipping_scaled'],
+        radius=12,
+        zmin=np.percentile(whale_data['shipping_scaled'], 50),
+        zmax=np.percentile(whale_data['shipping_scaled'], 99),
+        colorscale='YlOrRd',
+        name='Shipping Traffic',
+        visible='Shipping' in active_layers,
+        opacity=0.8,
+        hoverinfo='skip'
+    ))
+
+    species_config = {
+        'Blue': {'color': 'Blues', 'risk_col': 'blue.risk_scaled'},
+        'Fin': {'color': 'Greens', 'risk_col': 'fin.risk_scaled'},
+        'Humpback': {'color': 'Purples', 'risk_col': 'humpback.risk_scaled'},
+        'Sperm': {'color': 'Oranges', 'risk_col': 'sperm.risk_scaled'}
+    }
+
+    for species, config in species_config.items():
+        fig.add_trace(go.Densitymap(
+            lat=whale_data['lat_bin'],
+            lon=whale_data['lon_bin'],
+            z=whale_data[config['risk_col']],
+            radius=15,
+            zmin=np.percentile(whale_data[config['risk_col']], 40),
+            zmax=np.percentile(whale_data[config['risk_col']], 98),
+            colorscale=config['color'],
+            name=f"{species} Whale Risk",
+            visible=species in active_layers,
+            opacity=0.9,
+            hoverinfo='skip'
+        ))
+
+    fig.add_trace(go.Densitymap(
+        lat=whale_data['lat_bin'],
+        lon=whale_data['lon_bin'],
+        z=whale_data['composite_scaled'],
+        radius=15,
+        zmin=np.percentile(whale_data['composite_scaled'], 40),
+        zmax=np.percentile(whale_data['composite_scaled'], 98),
+        colorscale='Viridis',
+        name='Composite Whale Risk',
+        visible='Composite' in active_layers,
+        opacity=0.9,
+        hoverinfo='skip'
+    ))
+
+    hover_df = whale_data[whale_data['composite_scaled'] > whale_data['composite_scaled'].quantile(0.9)]
+    fig.add_trace(go.Scattermap(
+        lat=hover_df['lat_bin'],
+        lon=hover_df['lon_bin'],
+        mode='markers',
+        marker=dict(size=0),
+        name='Risk Info',
+        hoverinfo='text',
+        hovertext=hover_df.apply(
+            lambda x: f"<b>Location:</b> {x['lat_bin']:.2f}°N, {x['lon_bin']:.2f}°E<br>"
+                      f"<b>Shipping:</b> {x['shipping.index']:.2f}<br>"
+                      f"<b>Blue Whale Risk:</b> {x['blue.risk']:.2f}<br>"
+                      f"<b>Fin Whale Risk:</b> {x['fin.risk']:.2f}<br>"
+                      f"<b>Humpback Risk:</b> {x['humpback.risk']:.2f}<br>"
+                      f"<b>Sperm Whale Risk:</b> {x['sperm.risk']:.2f}",
+            axis=1),
+        visible=True
+    ))
+
+    fig.update_layout(
+        mapbox_style="carto-positron",
+        mapbox_zoom=1,
+        mapbox_center={'lat': 30, 'lon': -60},
+        height=800,
+        margin=dict(t=80, l=0, r=0, b=10),
+        legend=dict(orientation='h', y=-0.1, x=0.5, xanchor='center'),
+        title=dict(
+            text="Global Whale Conservation Risk Analysis<br><sup>Shipping Traffic vs. Whale Risk Hotspots</sup>",
+            x=0.5
+        )
+    )
+    return fig
+
+# ---- LAYOUT ----
+
+layer_options = ['Shipping', 'Composite', 'Blue', 'Fin', 'Humpback', 'Sperm']
+
+app.layout = html.Div([
+    html.H2("Interactive Whale Risk Map", style={'textAlign': 'center'}),
+    html.Div([
+        html.Label("Select Layers:", style={'marginRight': '10px'}),
+        dcc.Checklist(
+            id='layer-selector',
+            options=[{'label': l, 'value': l} for l in layer_options],
+            value=['Composite'],
+            inline=True,
+            inputStyle={'marginRight': '5px', 'marginLeft': '10px'}
+        )
+    ], style={'padding': '10px 20px'}),
+
+    dcc.Graph(id='whale-map')
+])
+
+# ---- CALLBACK ----
+
+@app.callback(
+    Output('whale-map', 'figure'),
+    Input('layer-selector', 'value')
+)
+def update_map(selected_layers):
+    return create_figure(selected_layers)
+
+# ---- RUN ----
+
+if __name__ == '__main__':
+    app.run(debug=True, port=8051)
+
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mModuleNotFoundError[39m                       Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mdash[39;00m
+[32m      2[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mdash[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m dcc, html, Output, Input
+[32m      3[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mgraph_objects[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mgo[39;00m
+
+[31mModuleNotFoundError[39m: No module named 'dash'
+
