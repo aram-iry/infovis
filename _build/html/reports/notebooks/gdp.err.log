@@ -37,22 +37,67 @@ Traceback (most recent call last):
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 import pandas as pd
-import csv
 import plotly.express as px
-from plotly.offline import init_notebook_mode
 
-init_notebook_mode()
+# Read the CSV file with proper parameters
+df = pd.read_csv('../data/capture_fisheries.csv', skiprows=4)  # Skip the header rows
+df = df.dropna(how='all')  # Drop empty rows
+
+# Melt the DataFrame to transform years into rows
+years = [str(year) for year in range(1960, 2025)]
+df_melted = df.melt(
+    id_vars=["Country Name", "Country Code", "Indicator Name", "Indicator Code"],
+    value_vars=years,
+    var_name="Year",
+    value_name="Capture Production (metric tons)"
+)
+
+# Convert to numeric and clean data
+df_melted['Year'] = pd.to_numeric(df_melted['Year'])
+df_melted['Capture Production (metric tons)'] = pd.to_numeric(
+    df_melted['Capture Production (metric tons)'], errors='coerce'
+)
+df_melted = df_melted.dropna(subset=['Capture Production (metric tons)'])
+
+# Calculate world totals by year
+world_totals = df_melted.groupby('Year')['Capture Production (metric tons)'].sum().reset_index()
+
+# Create the visualization
+fig = px.line(
+    world_totals,
+    x='Year',
+    y='Capture Production (metric tons)',
+    title='World Total Capture Fisheries Production (1960-2024)',
+    labels={'Capture Production (metric tons)': 'Total Capture (metric tons)'},
+    markers=True
+)
+
+# Customize the layout
+fig.update_layout(
+    xaxis_title='Year',
+    yaxis_title='Total Capture Production (metric tons)',
+    hovermode='x unified',
+    showlegend=False,
+    template='plotly_white'
+)
+
+fig.update_traces(
+    hovertemplate='<b>Year:</b> %{x}<br><b>Total Capture:</b> %{y:,} metric tons'
+)
+
+fig.show()
+
+
 ------------------
 
 
 [31m---------------------------------------------------------------------------[39m
 [31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 3[39m
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 2[39m
 [32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mcsv[39;00m
-[32m----> [39m[32m3[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
-[32m      4[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01moffline[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m init_notebook_mode
-[32m      6[39m init_notebook_mode()
+[32m----> [39m[32m2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
+[32m      4[39m [38;5;66;03m# Read the CSV file with proper parameters[39;00m
+[32m      5[39m df = pd.read_csv([33m'[39m[33m../data/capture_fisheries.csv[39m[33m'[39m, skiprows=[32m4[39m)  [38;5;66;03m# Skip the header rows[39;00m
 
 [31mModuleNotFoundError[39m: No module named 'plotly'
 
