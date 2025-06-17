@@ -3,6 +3,7 @@
 
 title: Whales and the Fishing Industry
 author: Group 21; Walvis
+logo: static/images/logo.jpg
 
 execute:
   execute_notebooks: force
@@ -17,6 +18,7 @@ repository:
   branch: main 
 
 html:
+  favicon: static/images/favicon.ico
   use_issues_button: true
   use_repository_button: true
   theme:
