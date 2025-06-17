@@ -38,6 +38,7 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 ------------------
 import pandas as pd
 import plotly.express as px
+init_notebook_mode()
 
 # Read the CSV file with proper parameters
 df = pd.read_csv('../data/capture_fisheries.csv', skiprows=4)  # Skip the header rows
@@ -92,12 +93,13 @@ fig.show()
 
 
 [31m---------------------------------------------------------------------------[39m
-[31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 2[39m
+[31mNameError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 3[39m
 [32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m----> [39m[32m2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
-[32m      4[39m [38;5;66;03m# Read the CSV file with proper parameters[39;00m
-[32m      5[39m df = pd.read_csv([33m'[39m[33m../data/capture_fisheries.csv[39m[33m'[39m, skiprows=[32m4[39m)  [38;5;66;03m# Skip the header rows[39;00m
+[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
+[32m----> [39m[32m3[39m [43minit_notebook_mode[49m()
+[32m      5[39m [38;5;66;03m# Read the CSV file with proper parameters[39;00m
+[32m      6[39m df = pd.read_csv([33m'[39m[33m../data/capture_fisheries.csv[39m[33m'[39m, skiprows=[32m4[39m)  [38;5;66;03m# Skip the header rows[39;00m
 
-[31mModuleNotFoundError[39m: No module named 'plotly'
+[31mNameError[39m: name 'init_notebook_mode' is not defined
 

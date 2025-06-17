@@ -36,50 +36,12 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-%run gdp.ipynb
+% run gdp.ipynb
+------------------
+
+----- stderr -----
+UsageError: Line magic function `%` not found.
 ------------------
 
 
-[31m---------------------------------------------------------------------------[39m
-[31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 1[39m
-[32m----> [39m[32m1[39m [43mget_ipython[49m[43m([49m[43m)[49m[43m.[49m[43mrun_line_magic[49m[43m([49m[33;43m'[39;49m[33;43mrun[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[33;43m'[39;49m[33;43mgdp.ipynb[39;49m[33;43m'[39;49m[43m)[49m
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/IPython/core/interactiveshell.py:2488[39m, in [36mInteractiveShell.run_line_magic[39m[34m(self, magic_name, line, _stack_depth)[39m
-[32m   2486[39m     kwargs[[33m'[39m[33mlocal_ns[39m[33m'[39m] = [38;5;28mself[39m.get_local_scope(stack_depth)
-[32m   2487[39m [38;5;28;01mwith[39;00m [38;5;28mself[39m.builtin_trap:
-[32m-> [39m[32m2488[39m     result = [43mfn[49m[43m([49m[43m*[49m[43margs[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mkwargs[49m[43m)[49m
-[32m   2490[39m [38;5;66;03m# The code below prevents the output from being displayed[39;00m
-[32m   2491[39m [38;5;66;03m# when using magics with decorator @output_can_be_silenced[39;00m
-[32m   2492[39m [38;5;66;03m# when the last Python token in the expression is a ';'.[39;00m
-[32m   2493[39m [38;5;28;01mif[39;00m [38;5;28mgetattr[39m(fn, magic.MAGIC_OUTPUT_CAN_BE_SILENCED, [38;5;28;01mFalse[39;00m):
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/IPython/core/magics/execution.py:748[39m, in [36mExecutionMagics.run[39m[34m(self, parameter_s, runner, file_finder)[39m
-[32m    746[39m     [38;5;28;01mwith[39;00m preserve_keys([38;5;28mself[39m.shell.user_ns, [33m'[39m[33m__file__[39m[33m'[39m):
-[32m    747[39m         [38;5;28mself[39m.shell.user_ns[[33m'[39m[33m__file__[39m[33m'[39m] = filename
-[32m--> [39m[32m748[39m         [38;5;28;43mself[39;49m[43m.[49m[43mshell[49m[43m.[49m[43msafe_execfile_ipy[49m[43m([49m[43mfilename[49m[43m,[49m[43m [49m[43mraise_exceptions[49m[43m=[49m[38;5;28;43;01mTrue[39;49;00m[43m)[49m
-[32m    749[39m     [38;5;28;01mreturn[39;00m
-[32m    751[39m [38;5;66;03m# Control the response to exit() calls made by the script being run[39;00m
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/IPython/core/interactiveshell.py:2979[39m, in [36mInteractiveShell.safe_execfile_ipy[39m[34m(self, fname, shell_futures, raise_exceptions)[39m
-[32m   2977[39m result = [38;5;28mself[39m.run_cell(cell, silent=[38;5;28;01mTrue[39;00m, shell_futures=shell_futures)
-[32m   2978[39m [38;5;28;01mif[39;00m raise_exceptions:
-[32m-> [39m[32m2979[39m     [43mresult[49m[43m.[49m[43mraise_error[49m[43m([49m[43m)[49m
-[32m   2980[39m [38;5;28;01melif[39;00m [38;5;129;01mnot[39;00m result.success:
-[32m   2981[39m     [38;5;28;01mbreak[39;00m
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/IPython/core/interactiveshell.py:310[39m, in [36mExecutionResult.raise_error[39m[34m(self)[39m
-[32m    308[39m     [38;5;28;01mraise[39;00m [38;5;28mself[39m.error_before_exec
-[32m    309[39m [38;5;28;01mif[39;00m [38;5;28mself[39m.error_in_exec [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
-[32m--> [39m[32m310[39m     [38;5;28;01mraise[39;00m [38;5;28mself[39m.error_in_exec
-
-    [31m[... skipping hidden 1 frame][39m
-
-[36mFile [39m[32m/tmp/ipykernel_11106/852451080.py:2[39m
-[32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m----> [39m[32m2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
-[32m      4[39m [38;5;66;03m# Read the CSV file with proper parameters[39;00m
-[32m      5[39m df = pd.read_csv([33m'[39m[33m../data/capture_fisheries.csv[39m[33m'[39m, skiprows=[32m4[39m)  [38;5;66;03m# Skip the header rows[39;00m
-
-[31mModuleNotFoundError[39m: No module named 'plotly'
 
