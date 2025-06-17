@@ -3,7 +3,7 @@
 
 title: Whales and the Fishing Industry
 author: Group 21; Walvis
-logo: static/images/logo.jpg
+logo: static/images/logo.png
 
 execute:
   execute_notebooks: force
