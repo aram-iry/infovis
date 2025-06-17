@@ -49,12 +49,12 @@ sphinx:
     html_css_files: ["custom.css"] 
     html_js_files:
       - enforce-light-theme.js
-
+      # This is for plotly to work
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      
 hide_code_cells:
   remove_input: true  # Hide all input cells by default
   remove_output: false
   remove_prompt: false
 
 
-      # This is for plotly to work
-      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
