@@ -1,0 +1,527 @@
+﻿Year;Oc;Area;Excode;Nation;Land St. / Floating Factory;start month;start year;end month;end year;TBlue;PBlue;Fin;Spm;Hbk;Sei;Bryd;Mi:C;Mi:A;Gray;Bhd;Ri;Unsp;Total;Ty;Ref;Notes;TotalLost
+1985;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Dec;1985;Mar;1986;0;0;0;0;0;0;0;0;1941;0;0;0;0;1941;Co;;Whaling under objection;1
+1985;SH;Antarctic;6442;USSR;Sovetskaya Ukraina;Dec;1985;Apr;1986;0;0;0;0;0;0;0;0;3028;0;0;0;0;3028;Co;;Whaling under objection;0
+1986;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1986;;1986;0;0;0;9;0;0;0;0;0;0;0;0;0;9;U;"Mu06; Bar05";Unofficial information;
+1986;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1986;;1986;0;0;0;0;0;0;0;2;0;0;0;0;0;2;A;PR87;;
+1986;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;May;1986;Sep;1986;0;0;9;0;0;0;0;0;0;0;0;0;0;9;A;PR;ID of 1F uncertain - sei?;0
+1986;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1986;;1986;0;0;0;0;0;0;0;145;0;0;0;0;0;145;A;;+ Individual data for 9 fin;
+1986;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;1986;Sep;1986;0;0;76;0;0;40;0;0;0;0;0;0;0;116;S;;;0
+1986;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1986;Jul;1986;0;0;0;0;0;0;0;379;0;0;0;0;0;379;Co;CNor;Whaling under objection;0
+1986;NA;W.Indies;2925;Saint Vincent & the Grenadines;"Bequia; Bequia Whale FishryCoop.";Jan;1986;Jan;1986;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;;;0
+1986;NP;Bonin Is;1500;Japan;Ogasawara;Apr;1986;Jul;1986;0;0;0;0;0;0;315;0;0;0;0;0;0;315;Co;CI;KK82 gives catch as 620 Bry.  Whaling under objection.  1 land st. used by 3 co.;1
+1986;NP;Japan;314;Japan;Ayukawa;Apr;1986;Mar;1987;0;0;0;10;0;0;0;105;0;0;0;0;0;115;Co;;Whaling under objection.;0
+1986;NP;Japan;326;Japan;Wadaura;Oct;1986;Mar;1987;0;0;0;69;0;0;0;0;0;0;0;0;0;69;Co;;Whaling under objection.;2
+1986;NP;Japan;318;Japan;Kiritappu;May;1986;Sep;1986;0;0;0;0;0;0;0;41;0;0;0;0;0;41;Co;;Whaling under objection.;0
+1986;NP;Japan;322;Japan;Osawa;Jan;1987;Mar;1987;0;0;0;31;0;0;0;0;0;0;0;0;0;31;Co;;Whaling under objection.;0
+1986;NP;Japan;325;Japan;Wada;Jul;1986;Aug;1986;0;0;0;0;0;0;0;0;0;0;0;0;0;0;C;;Small whale catch.;0
+1986;NP;Japan;324;Japan;Taiji;Apr;1986;Mar;1987;0;0;0;90;0;0;2;0;0;0;0;0;0;92;Co;;Whaling under objection. 1 land st. used by 2 co.;0
+1986;NP;JapnN/Kuril Is;302;Japan;Abashiri;Apr;1986;Oct;1986;0;0;0;0;0;0;0;165;0;0;0;0;0;165;Co;;Whaling under objection.;0
+1986;NP;Korea;2460;Korea;"Korea; Korea Off-shore Whal.Coop";Apr;1986;Jul;1986;0;0;0;0;0;0;0;69;0;0;0;0;0;69;S;CO;;0
+1986;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1986;Oct;1986;0;0;0;0;0;0;0;0;0;2;28;0;0;30;A;IR;Est. bowhead kill = 22: IWC95. Inc. 1 dauhval;8
+1986;NP;Chukotka;1800;USSR;USSR Aboriginal;;1986;;1986;0;0;0;0;0;0;0;0;0;169;0;0;0;169;A;"PR87; I90";;1
+1986;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Nov;1986;Mar;1987;0;0;0;0;0;0;0;0;1941;0;0;0;0;1941;Co;;Whaling under objection;0
+1986;SH;Antarctic;6442;USSR;Sovetskaya Ukraina;Dec;1986;Apr;1987;0;0;0;0;0;0;0;0;3028;0;0;0;0;3028;Co;;Whaling under objection;0
+1987;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1987;;1987;0;0;0;7;0;0;0;0;0;0;0;0;0;7;U;"Mu06; Bar05";Unofficial information;
+1987;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Sep;1987;Oct;1987;0;0;0;0;0;0;0;4;0;0;0;0;0;4;A;PR;;0
+1987;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;1987;Oct;1987;0;0;5;0;0;0;0;44;0;0;0;0;0;49;A;PR;86 minkes in the PR but 85 in the INF report (and 10 inf, unknown if included in the total);0
+1987;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1987;;1987;0;0;4;0;0;0;0;42;0;0;0;0;0;46;A;PR88;+ Individual data for 49 others = 95 total;
+1987;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;1987;Sep;1987;0;0;80;0;0;20;0;0;0;0;0;0;0;100;S;;;1
+1987;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1987;Aug;1987;0;0;0;0;0;0;0;373;0;0;0;0;0;373;Co;;Whaling under objection;0
+1987;NA;Azores;4260;Portugal;Azores;Aug;1987;Nov;1987;0;0;0;3;0;0;0;0;0;0;0;0;0;3;C;DG88;No official information;
+1987;NA;W.Indies;2925;Saint Vincent & the Grenadines;"Bequia; Bequia Whale FishryCoop.";Mar;1987;Mar;1987;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;;Catch taken prior to IWC catch limit => infractions;0
+1987;NP;Bonin Is;1500;Japan;Ogasawara;Apr;1987;Aug;1987;0;0;0;0;0;0;306;0;0;0;0;0;0;306;Co;CI;KK82 gives catch as 537 Bry.  Whaling under objection.  1 land st. used by 3 co.;0
+1987;NP;Japan;314;Japan;Ayukawa;Apr;1987;Dec;1987;0;0;0;50;0;0;0;123;0;0;0;0;0;173;Co;;Whaling under objection.;0
+1987;NP;Japan;322;Japan;Osawa;Sep;1987;Dec;1987;0;0;0;87;0;0;5;0;0;0;0;0;0;92;Co;;Whaling under objection.;0
+1987;NP;Japan;318;Japan;Kiritappu;Jun;1987;Sep;1987;0;0;0;0;0;0;0;35;0;0;0;0;0;35;Co;;Whaling under objection.;0
+1987;NP;Japan;324;Japan;Taiji;Apr;1987;Nov;1987;0;0;0;51;0;0;6;0;0;0;0;0;0;57;Co;;Whaling under objection. 1 land st. used by 2 co.;0
+1987;NP;Japan;325;Japan;Wada;Jul;1987;Aug;1987;0;0;0;0;0;0;0;0;0;0;0;0;0;0;C;;Small whale catch.;0
+1987;NP;JapnN/Kuril Is;302;Japan;Abashiri;Apr;1987;Oct;1987;0;0;0;0;0;0;0;146;0;0;0;0;0;146;Co;;Whaling under objection.;0
+1987;NP;Alaska N;1990;United States;Alaska Aboriginal;Mar;1987;Oct;1987;0;0;0;0;0;0;0;0;0;0;31;0;0;31;A;IR;Est.bowhd kill=29. Unconfirmed report of 1 gray;9
+1987;NP;Alaska N;1990;United States;Alaska Aboriginal;;1987;;1987;0;0;0;0;0;0;0;0;0;1;0;0;0;1;A;IR;Unconfirmed report of 1 gray taken 24 May Hooper Bay.;0
+1987;NP;Chukotka;1800;USSR;USSR Aboriginal;Sep;1987;Nov;1987;0;0;0;0;0;0;0;0;0;54;0;0;0;54;A;CO(G);;0
+1987;NP;Chukotka;1800;USSR;USSR Aboriginal;;1987;;1987;0;0;0;0;0;0;0;0;0;104;0;0;0;104;A;"I90; PR88";+ individual data for 54 = 158 total;4
+1987;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Jan;1988;Mar;1988;0;0;0;0;0;0;0;1;272;0;0;0;0;273;S;;Area IV. Sp.Permit feasibility study;0
+1988;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1988;;1988;0;0;0;7;0;0;0;0;0;0;0;0;0;7;U;"Mu06; Bar05";Unofficial information;
+1988;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Sep;1988;Sep;1988;0;0;0;0;0;0;0;5;0;0;0;0;0;5;A;;;0
+1988;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1988;;1988;0;0;0;0;0;0;0;5;0;0;0;0;0;5;A;PR89;+Individual data for 5 others = 10 total;
+1988;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;May;1988;Nov;1988;0;0;9;0;0;4;0;109;0;0;0;0;0;122;A;"CO(Grl) ;Wi05";"109 Mi landed in PR89 and Wi05; 108 landed + 1 lost in IR.  Inc. 4 sei from Witting data not listed elsewhere.";0
+1988;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1988;;1988;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;PR89;H taken as disabled.;0
+1988;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;1988;Aug;1988;0;0;68;0;0;10;0;0;0;0;0;0;0;78;S;;;1
+1988;NA;Atlantic NE;3880;Norway;Norway Small Whale;Aug;1988;Aug;1988;0;0;0;0;0;0;0;29;0;0;0;0;0;29;S;;;0
+1988;NA;W.Indies;2929;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Feb;1988;Feb;1988;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;;;0
+1988;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1988;Sep;1988;0;0;0;0;0;0;0;0;0;1;29;0;0;30;A;IR;Est. bowhead kill = 28.;7
+1988;NP;Chukotka;1800;USSR;USSR Aboriginal;Aug;1988;Oct;1988;0;0;0;0;0;0;0;0;0;74;0;0;0;74;A;CO(G);;
+1988;NP;Chukotka;1800;USSR;USSR Aboriginal;;1988;;1988;0;0;0;0;0;0;0;0;0;76;0;0;0;76;A;"I90; PR89";+ individual data for 74 = 150 total;
+1988;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Jan;1989;Mar;1989;0;0;0;0;0;0;0;5;236;0;0;0;0;241;S;;Area V. Sp.Permit feasibility study;0
+1989;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1989;;1989;0;0;0;4;0;0;0;0;0;0;0;0;0;4;U;"Mu06; Bar05";Unofficial information;
+1989;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Sep;1989;Sep;1989;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;PR90;Only 1 with details;0
+1989;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;1989;Oct;1989;0;0;10;0;0;1;0;63;0;0;0;0;0;74;A;;;0
+1989;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1989;;1989;0;0;4;0;2;1;0;0;0;0;0;0;0;7;A;;+Indiv.data.  Inc. 1 Hump dauhval & 4 lost fin;4
+1989;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;1989;Jul;1989;0;0;68;0;0;0;0;0;0;0;0;0;0;68;S;;;0
+1989;NA;Atlantic NE;3880;Norway;Norway Small Whale;Jul;1989;Jul;1989;0;0;0;0;0;0;0;17;0;0;0;0;0;17;S;;All E sub-areas;0
+1989;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1989;Oct;1989;0;0;0;0;0;0;0;2;0;1;26;0;0;29;A;IR;Est. bowhead kill = 25.  Excl 2 bowhd dauhval.;8
+1989;NP;Chukotka;1800;USSR;USSR Aboriginal;Jun;1989;Nov;1989;0;0;0;0;0;0;0;0;0;63;0;0;0;63;A;CO(G);;0
+1989;NP;Chukotka;1800;USSR;USSR Aboriginal;;1989;;1989;0;0;0;0;0;0;0;0;0;116;0;0;0;116;A;"I90; PR90";+ individual data for 63 = 179 total;1
+1989;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Dec;1989;Feb;1990;0;0;0;0;0;0;0;3;327;0;0;0;0;330;S;;Area IV.;1
+1990;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1990;;1990;0;0;0;12;0;0;0;0;0;0;0;0;0;12;U;"Mu06; Bar05";Unofficial information;
+1990;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Aug;1990;Aug;1990;0;0;0;0;0;0;0;6;0;0;0;0;0;6;A;IR;;0
+1990;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;1990;Dec;1990;0;0;20;0;1;0;0;86;0;0;0;0;0;107;A;Wi05;Exc. 3 bycatches. Data inc 1 more fin than listed in IR;0
+1990;NA;Atlantic NE;3880;Norway;Norway Small Whale;Aug;1990;Aug;1990;0;0;0;0;0;0;0;5;0;0;0;0;0;5;S;;All E sub-areas;0
+1990;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1990;Dec;1990;0;0;0;0;0;0;0;0;0;0;44;0;0;44;A;IR;Inc. 14 struck & lost. Est. bowhead kill = 41;14
+1990;NP;Chukotka;1800;USSR;USSR Aboriginal;Aug;1990;Nov;1990;0;0;0;0;0;0;0;0;0;61;0;0;0;61;A;CO(G);;0
+1990;NP;Chukotka;1800;USSR;USSR Aboriginal;;1990;;1990;0;0;0;0;0;0;0;0;0;101;0;0;0;101;A;PR92;+ individual data for 61 = 162 total;2
+1990;SH;Antarctic;6482;Japan;"Nisshin Maru III; Nippon KyodoH";Dec;1990;Mar;1991;0;0;0;0;0;0;0;4;323;0;0;0;0;327;S;;Area V (+part of Ross Sea E of 170W).;0
+1991;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1991;;1991;0;0;0;14;0;0;0;0;0;0;0;0;0;14;U;"Mu06; Bar05";Unofficial information. 15 sperm in EK13.;
+1991;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1991;;1991;0;0;0;0;1;0;0;7;0;0;0;0;0;8;A;IR;Hbk infraction. Wi05 lists 10 mi - does this inc. bycatch?;0
+1991;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1991;;1991;0;0;0;0;0;0;0;98;0;0;0;0;0;98;A;CI(G);IR lists 99.  Inc 1 lost;1
+1991;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1991;;1991;0;0;18;0;0;0;0;1;0;0;0;0;0;19;A;IR;Lost: 2f;2
+1991;NA;Atlantic NE;3880;Norway;Norway Small Whale;Sep;1991;Sep;1991;0;0;0;0;0;0;0;1;0;0;0;0;0;1;I;IR;Infraction.  Taken in Lofoten area.;0
+1991;NP;CanadaW,Arctic;2000;Canada;Canada Aboriginal;Sep;1991;Sep;1991;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;CO(O);Beaufort Sea. Data from D.Goodman, Fisheries & Oceans;0
+1991;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1991;Dec;1991;0;0;0;0;0;0;0;0;0;0;46;0;0;46;A;IR;47 in Sy95. Inc. 19 struck & lost. Est.kill=46.;19
+1991;NP;Alaska N;1990;United States;Alaska Aboriginal;;1991;;1991;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Sy95;Not in IR.  May be 1 “found dead” whale at Kaktovik.;0
+1991;NP;Chukotka;1800;USSR;USSR Aboriginal;Aug;1991;Nov;1991;0;0;0;0;0;0;0;0;0;66;0;0;0;66;A;CO(G);;0
+1991;NP;Chukotka;1800;USSR;USSR Aboriginal;;1991;;1991;0;0;0;0;0;0;0;0;0;103;0;0;0;103;A;"OI; IWC/49/AS2";+ individual data for 66 = 169 total;0
+1991;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1991;Mar;1992;0;0;0;0;0;0;0;0;288;0;0;0;0;288;S;;Area IV;0
+1992;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1992;;1992;0;0;0;7;0;0;0;0;0;0;0;0;0;7;U;"Mu06; Bar05";Unofficial information. 10 sperm in EK13.;
+1992;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1992;;1992;0;0;0;0;0;0;0;11;0;0;0;0;0;11;A;IR;;3
+1992;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1992;;1992;0;0;0;0;0;0;0;107;0;0;0;0;0;107;A;CI(G);"Exc 3 bycatches; inc 4 lost.  IR reports 103 mi inc. 7 lost";4
+1992;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1992;;1992;0;0;22;0;1;0;0;0;0;0;0;0;0;23;A;IR;Lost: 1h, 6f;7
+1992;NA;Atlantic NE;3880;Norway;Norway Small Whale;Jul;1992;Aug;1992;0;0;0;0;0;0;0;95;0;0;0;0;0;95;S;CO(O);All E sub-areas;3
+1992;NA;W.Indies;2929;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Feb;1992;Feb;1992;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;IR;;1
+1992;NP;Chukotka;1810;Russia;Russia Aboriginal;;1992;;1992;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;IWC95a;No catch taken (IWC/49/AS2 gives a catch, but is in error);0
+1992;NP;Alaska N;1990;United States;Alaska Aboriginal;Feb;1992;Oct;1992;0;0;0;0;0;0;0;0;0;0;50;0;0;50;A;IR;Inc. 12 struck & lost. Est. bowhead kill = 46.;12
+1992;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1992;Mar;1993;0;0;0;0;0;0;0;3;327;0;0;0;0;330;S;;Area  V (+part of Ross Sea E of 170W).;0
+1993;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1993;;1993;0;0;0;10;0;0;0;0;0;0;0;0;0;10;U;"Mu06; Bar05";Unofficial information. 8 sperm in EK13.;
+1993;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1993;;1993;0;0;0;0;0;0;0;9;0;0;0;0;0;9;A;IR;;0
+1993;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1993;;1993;0;0;0;0;0;0;0;107;0;0;0;0;0;107;A;CI(G);"Exc 5 bycatches; inc 1 lost.  IR reports 107 mi inc. 6 lost";1
+1993;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1993;;1993;0;0;14;0;0;0;0;0;0;0;0;0;0;14;A;IR;Lost: 1f;1
+1993;NA;Atlantic NE;3880;Norway;Norway Small Whale;Jun;1993;Aug;1993;0;0;0;0;0;0;0;157;0;0;0;0;0;157;Co;CO(O);Catching under objection:157 (144 E areas, 13CM);3
+1993;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;1993;Sep;1993;0;0;0;0;0;0;0;69;0;0;0;0;0;69;S;CO(O);"Special permit 69 (all from E subareas; inc. 6 lost)";6
+1993;NA;W.Indies;2929;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Feb;1993;Feb;1993;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;IR;;0
+1993;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1993;Oct;1993;0;0;0;0;0;0;0;0;0;0;52;0;0;52;A;IR;Inc. 11 struck & lost. Est. bowhead kill = 51.;11
+1993;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1993;Mar;1994;0;0;0;0;0;0;0;0;330;0;0;0;0;330;S;;Area IV;0
+1994;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1994;;1994;0;0;0;27;0;0;0;0;0;0;0;0;0;27;U;"Mu06; Bar05";Unofficial information. 10 sperm in EK13.;
+1994;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Sep;1994;Sep;1994;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Po11;Igloolik. Unlicenced catch.;0
+1994;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1994;;1994;0;0;0;0;0;0;0;5;0;0;0;0;0;5;A;IR;;0
+1994;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1994;;1994;0;0;0;0;0;0;0;104;0;0;0;0;0;104;A;CI(G);Lost: 4mi.  IR reports 104 mi inc. 4 lost;4
+1994;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1994;;1994;0;0;22;0;0;0;0;0;0;0;0;0;0;22;A;IR;Lost: 2f. Exc 1 hk trapped in ice shot before permission given.;2
+1994;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1994;Sep;1994;0;0;0;0;0;0;0;74;0;0;0;0;0;74;S;CO(O);"Special permit 74 (all from E subareas; inc. 4 lost)";4
+1994;NA;Atlantic NE;3880;Norway;Norway Small Whale;Jun;1994;Aug;1994;0;0;0;0;0;0;0;206;0;0;0;0;0;206;Co;CO(O);Catching under objection:206 (165 E areas, 41CM);3
+1994;NP;Pacific NW;6605;Japan;Nisshin Maru;Jul;1994;Sep;1994;0;0;0;0;0;0;0;21;0;0;0;0;0;21;S;;;0
+1994;NP;Chukotka;1810;Russia;Russia Aboriginal;;1994;;1994;0;0;0;0;0;0;0;0;0;44;0;0;0;44;A;IWC/49/AS2;No. =- RIWC1998:243;
+1994;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1994;Oct;1994;0;0;0;0;0;0;0;0;0;0;46;0;0;46;A;IR;Inc. 12 struck & lost. Est. bowhead kill = 38.;12
+1994;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1994;Mar;1995;0;0;0;0;0;0;0;0;330;0;0;0;0;330;S;;Area V.;0
+1995;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1995;;1995;0;0;0;38;0;0;0;0;0;0;0;0;0;38;U;"Mu06; Bar05";Unofficial information. 40 sperm in EK13.;
+1995;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1995;;1995;0;0;0;0;0;0;0;9;0;0;0;0;0;9;A;IR;;2
+1995;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1995;;1995;0;0;0;0;0;0;0;153;0;0;0;0;0;153;A;CI(G);155 mi in Wi05, excluding bycatch - extra 2 records may be duplicates.;4
+1995;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1995;;1995;0;0;12;0;0;0;0;0;0;0;0;0;0;12;A;IR;;0
+1995;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1995;Aug;1995;0;0;0;0;0;0;0;218;0;0;0;0;0;218;Co;CO(O);Whaling under objection. 176 E sub-areas, 42CM;1
+1995;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;1995;Aug;1995;0;0;0;0;0;0;0;100;0;0;0;0;0;100;S;;;0
+1995;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;1995;Oct;1995;0;0;0;0;0;0;0;0;0;85;0;0;0;85;A;Bor96;;1
+1995;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;1995;Oct;1995;0;0;0;0;0;0;0;0;0;5;0;0;0;5;A;IWC/49/AS2;+Individual data for 85 others = 90 total.;0
+1995;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1995;Oct;1995;0;0;0;0;0;0;0;0;0;2;57;0;0;59;A;Sy97;Inc. 14 bowhead struck & lost.  Est. bowhead kill = 57. IR reported 2 of the struck & lost as landed.;14
+1995;SH;Antarctic;6600;Japan;Nisshin Maru;Nov;1995;Mar;1996;0;0;0;0;0;0;0;0;440;0;0;0;0;440;S;;"Area IIIE (109), IV (330); V (1)";1
+1996;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1996;;1996;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;EK13;Unofficial information. 5 sperm in Mu06;
+1996;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;1996;Aug;1996;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Re12;Repulse Bay;0
+1996;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1996;;1996;0;0;0;0;0;0;0;12;0;0;0;0;0;12;A;IR;Wi05 lists 13 mi - does this inc. bycatch?;0
+1996;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1996;;1996;0;0;0;0;0;0;0;167;0;0;0;0;0;167;A;CI(G);;4
+1996;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1996;;1996;0;0;19;0;1;0;0;0;0;0;0;0;0;20;A;IR;Hbk found with shot wounds was killed;0
+1996;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1996;Jul;1996;0;0;0;0;0;0;0;387;1;0;0;0;0;388;Co;CO(O);Whaling under objection. 348 E sub-areas, 40CM.  DNA analysis showed one Antarctic minke (Glover et al 2010);5
+1996;NA;W.Indies;2929;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;1996;May;1996;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;IR;;0
+1996;NP;CanadaW,Arctic;2000;Canada;Canada Aboriginal;Jul;1996;Jul;1996;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Po11;Caught at Shingle Point, Beaufort Sea.;0
+1996;NP;Pacific NW;6605;Japan;Nisshin Maru;Jul;1996;Sep;1996;0;0;0;0;0;0;0;77;0;0;0;0;0;77;S;;;0
+1996;NP;Chukotka;1810;Russia;Russia Aboriginal;Jul;1996;Aug;1996;0;0;0;0;0;0;0;0;0;26;0;0;0;26;A;Blk97;;0
+1996;NP;Chukotka;1810;Russia;Russia Aboriginal;;1996;;1996;0;0;0;0;0;0;0;0;0;17;0;0;0;17;A;IWC/49/AS2;+ individual data for 26 = 43. 38 reported in DB01& Blk97. The Infractions sub-committee was told that 43 was correct.;0
+1996;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1996;Sep;1996;0;0;0;0;0;0;0;0;0;0;43;0;0;43;A;Sy97;Excludes 1 caught 4 Jan 97 that is inc. in 1997 no. Inc. 5 sruck & lost. Est. bowhead kill = 43;5
+1996;SH;Antarctic;6600;Japan;Nisshin Maru;Nov;1996;Mar;1997;0;0;0;0;0;0;0;0;440;0;0;0;0;440;S;;"Area V (284); VIW (156)";0
+1997;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1997;;1997;0;0;0;22;0;0;0;0;0;0;0;0;0;22;U;EK13;Unofficial information. 10 sperm in Mu06;
+1997;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1997;;1997;0;0;0;0;0;0;0;14;0;0;0;0;0;14;A;IR;;3
+1997;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1997;;1997;0;0;0;0;0;0;0;148;0;0;0;0;0;148;A;CI(G);;2
+1997;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1997;;1997;0;0;13;0;0;0;0;0;0;0;0;0;0;13;A;IR;Lost: 2f;2
+1997;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1997;Jul;1997;0;0;0;0;0;0;0;503;0;0;0;0;0;503;Co;CO(O);Whaling under objection. 483 E sub-areas, 20CM;7
+1997;NP;Pacific NW;6605;Japan;Nisshin Maru;May;1997;Jul;1997;0;0;0;0;0;0;0;100;0;0;0;0;0;100;S;;;0
+1997;NP;Chukotka;1810;Russia;Russia Aboriginal;;1997;;1997;0;0;0;0;0;0;0;0;0;79;0;0;0;79;A;IWC/51/AS1;48m & 31f;
+1997;NP;Alaska N;1990;United States;Alaska Aboriginal;Jan;1997;Oct;1997;0;0;0;0;0;0;0;0;0;0;66;0;0;66;A;G98;Inc. 18 struck & lost.  Estimated kill = 62;18
+1997;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1997;Mar;1998;0;0;0;0;0;0;0;0;438;0;0;0;0;438;S;;"Area IIIE (111); IV (327)";0
+1998;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1998;;1998;0;0;0;31;0;0;0;0;0;0;0;0;0;31;U;EK13;Unofficial information. 23 sperm in Mu06;
+1998;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Jul;1998;Jul;1998;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Re12;"Pangnirtung; Davis St/Baffin Bay stock.";0
+1998;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1998;;1998;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;IR;;0
+1998;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1998;;1998;0;0;0;0;0;0;0;166;0;0;0;0;0;166;A;CI(G);;3
+1998;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1998;;1998;0;0;11;0;0;0;0;0;0;0;0;0;0;11;A;IR;Lost: 2f;2
+1998;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1998;Aug;1998;0;0;0;0;0;0;0;625;0;0;0;0;0;625;Co;CO(O);Whaling under objection. 586 E sub-areas, 57CM;11
+1998;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Feb;1998;Feb;1998;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;;;0
+1998;NP;Pacific NW;6605;Japan;Nisshin Maru;May;1998;Jun;1998;0;0;0;0;0;0;1;100;0;0;0;0;0;101;S;;Bryde’s taken by accident (coded as sp. Permit).;0
+1998;NP;Chukotka;1810;Russia;Russia Aboriginal;Mar;1998;Nov;1998;0;0;0;0;0;0;0;0;0;125;1;0;0;126;A;"IR; IWC/51/AS1";;2
+1998;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1998;Dec;1998;0;0;0;0;0;0;0;0;0;0;54;0;0;54;A;G99;"Inc. 41 landed; 1 killed but abandoned + 12 struck & lost. Estimated kill = 49";13
+1998;SH;Antarctic;6600;Japan;Nisshin Maru;Jan;1999;Mar;1999;0;0;0;0;0;0;0;0;389;0;0;0;0;389;S;;"Area V (328); VIW (61)";0
+1999;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;1999;;1999;0;0;0;6;0;0;0;0;0;0;0;0;0;6;U;"EK13; Mu06";Unofficial information;
+1999;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;1999;;1999;0;0;0;0;0;0;0;14;0;0;0;0;0;14;A;PR;15 mi in IR but final Greenland summary lists 14.;0
+1999;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1999;;1999;0;0;0;0;0;0;0;172;0;0;0;0;0;172;A;"CI(G); Wi05";Data inc. only 4 without len/sex: IR lists 5 lost.;4
+1999;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;1999;;1999;0;0;9;0;2;0;0;1;0;0;0;0;0;12;A;"PR00; IR";Inc.2 hbk shot at but not killed. Lost: 2f, 1 extra minke (making 5 lost minke);3
+1999;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;1999;Jul;1999;0;0;0;0;0;0;0;591;0;0;0;0;0;591;Co;CO(O);"Whaling under objection. 589 listed in Prog Rep is wrong. 533E; 58CM";17
+1999;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;1999;Mar;1999;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;;;0
+1999;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;1999;Jul;1999;0;0;0;0;0;0;0;100;0;0;0;0;0;100;S;;;0
+1999;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;1999;Nov;1999;0;0;0;0;0;0;0;0;0;123;1;0;0;124;A;Bor01a;Inc. 2gray lost.;2
+1999;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;1999;Nov;1999;0;0;0;0;0;0;0;0;0;0;47;0;0;47;A;G00;Inc. 5 struck & lost.  Estimated kill = 47.;5
+1999;NP;USA W coast;1980;United States;Makah Aboriginal;May;1999;May;1999;0;0;0;0;0;0;0;0;0;1;0;0;0;1;A;PR00;;0
+1999;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;1999;Mar;2000;0;0;0;0;0;0;0;0;439;0;0;0;0;439;S;;"Area IIIE (109); IV (330)";0
+2000;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2000;;2000;0;0;0;10;0;0;0;0;0;0;0;0;0;10;U;EK13;Unofficial information;
+2000;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2000;Aug;2000;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Re12;Coral Harbour;0
+2000;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2000;;2000;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;"PR01; IR";;0
+2000;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2000;;2000;0;0;0;0;0;0;0;109;0;0;0;0;0;109;A;CI(G);;0
+2000;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2000;;2000;0;0;7;0;0;0;0;36;0;0;0;0;0;43;A;"PR01; IR";Lost: 1f, 3mi;4
+2000;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;2000;Aug;2000;0;0;0;0;0;0;0;487;0;0;0;0;0;487;Co;CO(O);Whaling under objection. 430 E sub-areas, 57CM;6
+2000;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2000;May;2000;0;0;0;0;2;0;1;0;0;0;0;0;0;3;A;IR;Bryde’s whale illegally taken by whaler.;0
+2000;NP;Pacific NW;6605;Japan;Nisshin Maru;Aug;2000;Sep;2000;0;0;0;5;0;0;43;40;0;0;0;0;0;88;S;;;0
+2000;NP;Korea;2470;Korea;"Korea; Illegal catches";May;2000;May;2000;0;0;0;0;0;0;0;2;0;0;0;0;0;2;I;IR;;0
+2000;NP;Chukotka;1810;Russia;Russia Aboriginal;Jul;2000;Nov;2000;0;0;0;0;0;0;0;0;0;115;1;0;0;116;A;Bor01;Inc. 2 Gr lost (wounded).;2
+2000;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2000;Oct;2000;0;0;0;0;0;0;0;0;0;0;47;0;0;47;A;Sy01;Inc. 12 struck & lost.  Estimated kill = 42.;12
+2000;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2000;Mar;2001;0;0;0;0;0;0;0;0;444;0;0;0;0;444;S;;"Area V (300); VIW (140)";4
+2001;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2001;;2001;0;0;0;35;0;0;0;0;0;0;0;0;0;35;U;EK13;Unofficial information. 35 sperm in Mu06;
+2001;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2001;;2001;0;0;0;0;0;0;0;17;0;0;0;0;0;17;A;"PR02; IR";;3
+2001;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2001;;2001;0;0;0;0;0;0;0;119;0;0;0;0;0;119;A;CI(G);;0
+2001;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2001;;2001;0;0;8;0;2;0;0;20;0;0;0;0;0;30;A;"PR02; Mat02";Exc. 2 bycaught hbk.  Inc. lost: 1f, 2hbk, 2mi;5
+2001;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;2001;Sep;2001;0;0;0;0;0;0;0;552;0;0;0;0;0;552;Co;CO(O);Whaling under objection. 521 E sub-areas, 31CM;11
+2001;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2001;;2001;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;;No date or length given.;0
+2001;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2001;Aug;2001;0;0;0;8;0;1;50;100;0;0;0;0;0;159;S;;Sei whale taken in error;0
+2001;NP;Korea;2470;Korea;"Korea; Illegal catches";May;2001;May;2001;0;0;0;0;0;0;0;1;0;0;0;0;0;1;I;IR;;0
+2001;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2001;Nov;2001;0;0;0;0;0;0;0;0;0;112;1;0;0;113;A;Bor02;Gray: 62m: 50f.  Inc. 2 'stinky' whales (only 1 identified in indiv. data);0
+2001;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2001;Dec;2001;0;0;0;0;0;0;0;0;0;0;75;0;0;75;A;Sy02;Inc. 26 struck & lost.  Estimated kill = 66.;26
+2001;SH;Antarctic;6600;Japan;Nisshin Maru;Nov;2001;Mar;2002;0;0;0;0;0;0;0;0;452;0;0;0;0;452;S;;"Area IIIE (110); IV (330) + 12 lost";12
+2002;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2002;;2002;0;0;0;28;0;0;0;0;0;0;0;0;0;28;U;EK13;Unofficial information. 23 sperm in Mu06;
+2002;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2002;Aug;2002;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;"CO(O); Re12";Igloolik, Nunavut Territory. Ref CC IWC.ALL.62 20 Dec02;0
+2002;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2002;;2002;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;PR03;;0
+2002;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2002;;2002;0;0;0;0;0;0;0;137;0;0;0;0;0;137;A;CI(G);;5
+2002;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2002;;2002;0;0;13;0;2;0;0;2;0;0;0;0;0;17;A;"PR03; IR";Inc. 2 hbk killed after injury in rifle hunts (infractions).;0
+2002;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2002;Sep;2002;0;0;0;0;0;0;0;634;0;0;0;0;0;634;Co;CO(O);Whaling under objection. 599 E sub-areas, 35CM;9
+2002;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2002;Mar;2002;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;PR03;;0
+2002;NP;Japan;1420;Japan;Kushiro: research;Sep;2002;Oct;2002;0;0;0;0;0;0;0;50;0;0;0;0;0;50;S;;;0
+2002;NP;Pacific NW;6605;Japan;Nisshin Maru;Jul;2002;Sep;2002;0;0;0;5;0;40;50;102;0;0;0;0;0;197;S;;Inc. lost: 1sei, 2mi;3
+2002;NP;Korea;2470;Korea;"Korea; Illegal catches";May;2002;May;2002;0;0;0;0;0;0;0;1;0;0;0;0;0;1;I;IR;;0
+2002;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2002;Dec;2002;0;0;0;0;0;0;0;0;0;131;3;0;0;134;A;Bor03;Inc. 1 bowhead lost. Gray: 70m: 61f;1
+2002;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2002;Dec;2002;0;0;0;0;0;0;0;0;0;0;50;0;0;50;A;Sy03;Inc. 11 struck & lost.  Estimated kill = 45.;11
+2002;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2002;Mar;2003;0;0;0;0;0;0;0;0;441;0;0;0;0;441;S;;"Area V (330); VIW (110).  Inc. 1 struck & lost";1
+2003;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2003;;2003;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;EK13;Unofficial information. 20 sperm in Mu06;
+2003;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2003;;2003;0;0;0;0;0;0;0;14;0;0;0;0;0;14;A;IR;;1
+2003;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2003;;2003;0;0;0;0;0;0;0;182;0;0;0;0;0;182;A;CI(G);;7
+2003;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2003;;2003;0;0;9;0;1;0;0;3;0;0;0;0;0;13;A;IR;Lost: 3f;3
+2003;NA;Iceland;3510;Iceland;Iceland Small Type;Aug;2003;Sep;2003;0;0;0;0;0;0;0;37;0;0;0;0;0;37;S;Vi04;1st catch by Iceland since rejoining the IWC;1
+2003;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;2003;Sep;2003;0;0;0;0;0;0;0;647;0;0;0;0;0;647;Co;CO(O);Whaling under objection. 626 E sub-areas, 21CM;9
+2003;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2003;Mar;2003;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;IR;;0
+2003;NP;Japan;1425;Japan;Ayukawa: research;Apr;2003;May;2003;0;0;0;0;0;0;0;50;0;0;0;0;0;50;S;;;0
+2003;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2003;Aug;2003;0;0;0;10;0;50;50;101;0;0;0;0;0;211;S;;Inc. 1 lost;1
+2003;NP;Korea;2470;Korea;"Korea; Illegal catches";Apr;2003;May;2003;0;0;0;0;0;0;0;5;0;0;0;0;0;5;I;IR;Infractions (taken deliberately);0
+2003;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2003;Nov;2003;0;0;0;0;0;0;0;0;0;128;3;0;0;131;A;"Bor04; IR";Inc. 2 gray lost.;2
+2003;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2003;Dec;2003;0;0;0;0;0;0;0;0;0;0;41;0;0;41;A;Sy04;Inc. 6 struck & lost.  Estimated kill = 37;6
+2003;SH;Antarctic;6600;Japan;Nisshin Maru;Nov;2003;Mar;2004;0;0;0;0;0;0;0;0;443;0;0;0;0;443;S;;"Inc. 3 lost.  Area IIIE (110); IV (330)";3
+2004;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2004;;2004;0;0;0;14;0;0;0;0;0;0;0;0;0;14;U;"EK13; Mu06";Unofficial information;
+2004;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2004;;2004;0;0;0;0;0;0;0;11;0;0;0;0;0;11;A;IR;;0
+2004;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2004;;2004;0;0;0;0;0;0;0;176;0;0;0;0;0;176;A;CI(G);;4
+2004;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2004;;2004;0;0;13;0;1;0;0;3;0;0;0;0;0;17;A;IR;Inc. 2 fin struck & lost;2
+2004;NA;Iceland;3510;Iceland;Iceland Small Type;Jun;2004;Jul;2004;0;0;0;0;0;0;0;25;0;0;0;0;0;25;S;Vi05;;0
+2004;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2004;Jul;2004;0;0;0;0;0;0;0;544;0;0;0;0;0;544;Co;CO(O);Whaling under objection. 527 E sub-areas, 17CM;7
+2004;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2004;;2004;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;IR;No catch in 2004;0
+2004;NP;Japan;1420;Japan;Kushiro: research;Sep;2004;Oct;2004;0;0;0;0;0;0;0;60;0;0;0;0;0;60;S;;Inc. 1 lost;1
+2004;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2004;Sep;2004;0;0;0;3;0;100;51;100;0;0;0;0;0;254;S;;;1
+2004;NP;Korea;2470;Korea;"Korea; Illegal catches";Mar;2004;Jul;2004;0;0;0;0;0;0;0;8;0;0;0;0;0;8;I;IR;Infractions (taken deliberately);0
+2004;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2004;Nov;2004;0;0;0;0;0;0;0;0;0;111;1;0;0;112;A;IR;Inc. 1 gray lost + 6 'stinky' whales;1
+2004;NP;Alaska N;1990;United States;Alaska Aboriginal;Jan;2004;Dec;2004;0;0;0;0;0;0;0;0;0;0;44;0;0;44;A;"Sy05; Sy06";Inc. 1 killed 31 Dec omitted from Sy05. Inc. 7 struck & lost.  Estimated kill = 45.;7
+2004;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2004;Mar;2005;0;0;0;0;0;0;0;0;441;0;0;0;0;441;S;;"Inc. 1 lost.  Area V (330); VIW (110)";1
+2005;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2005;;2005;0;0;0;5;0;0;0;0;0;0;0;0;0;5;U;EK13;Unofficial information;
+2005;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2005;Aug;2005;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;Re12;Repulse Bay;0
+2005;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2005;;2005;0;0;0;0;0;0;0;4;0;0;0;0;0;4;A;IR;;0
+2005;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2005;;2005;0;0;0;0;0;0;0;172;0;0;0;0;0;172;A;CI(G);;3
+2005;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2005;;2005;0;0;13;0;0;0;0;4;0;0;0;0;0;17;A;IR;Inc. 1 fin struck & lost;1
+2005;NA;Iceland;3510;Iceland;Iceland Small Type;Jul;2005;Aug;2005;0;0;0;0;0;0;0;39;0;0;0;0;0;39;S;;Inc. 5 lost;5
+2005;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2005;Sep;2005;0;0;0;0;0;0;0;639;0;0;0;0;0;639;Co;CO(O);Whaling under objection. 634 E sub-areas, 5CM;6
+2005;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Feb;2005;Jun;2005;0;0;0;0;1;0;1;0;0;0;0;0;0;2;A;IR;Bryde’s whale infraction;0
+2005;NP;Japan;1420;Japan;Kushiro: research;Sep;2005;Oct;2005;0;0;0;0;0;0;0;61;0;0;0;0;0;61;S;;Inc. 1 mi lost;1
+2005;NP;Japan;1425;Japan;Ayukawa: research;Apr;2005;May;2005;0;0;0;0;0;0;0;60;0;0;0;0;0;60;S;;;
+2005;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2005;Aug;2005;0;0;0;5;0;100;50;101;0;0;0;0;0;256;S;;Inc. 1 mi lost;1
+2005;NP;Korea;2470;Korea;"Korea; Illegal catches";Mar;2005;Jun;2005;0;0;0;0;0;0;0;3;0;0;0;0;0;3;I;IR;Infractions (taken deliberately);0
+2005;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2005;Nov;2005;0;0;0;0;0;0;0;0;0;124;2;0;0;126;A;"IWC/58/AS4; IR";Inc. 9 gray lost + 2 'stinky' whales;9
+2005;NP;Alaska N;1990;United States;Alaska Aboriginal;Jan;2005;Nov;2005;0;0;0;0;0;0;0;0;0;0;68;0;0;68;A;"IR; Sy06";Inc. 13 struck & lost + 1 abandoned.  Estimated kill = 64.;13
+2005;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2005;Mar;2006;0;0;10;0;0;0;0;0;856;0;0;0;0;866;S*;;"See **. Area V (150); IV (573mi+10sp); IIIE (130)";3
+2006;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2006;;2006;0;0;0;4;0;0;0;0;0;0;0;0;0;4;U;EK13;Unofficial information;
+2006;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2006;;2006;0;0;1;0;0;0;0;3;0;0;0;0;0;4;A;IR;Inc. 1 fin prohibited stock + 1 minke struck & lost;1
+2006;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2006;;2006;0;0;0;0;0;0;0;180;0;0;0;0;0;180;A;CI(G);;6
+2006;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2006;;2006;0;0;10;0;1;1;0;1;0;0;0;0;0;13;A;IR;Inc. 2 prohibited species + 1 fin struck & lost;1
+2006;NA;Iceland;3510;Iceland;Iceland Small Type;Jun;2006;Aug;2006;0;0;0;0;0;0;0;60;0;0;0;0;0;60;S;;Special permit catch inc. 2 lost;2
+2006;NA;Iceland;3510;Iceland;Iceland Small Type;Oct;2006;Oct;2006;0;0;0;0;0;0;0;1;0;0;0;0;0;1;Cr;;Whaling under reservation.;0
+2006;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Oct;2006;Oct;2006;0;0;7;0;0;0;0;0;0;0;0;0;0;7;Cr;;Whaling under reservation.;0
+2006;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2006;Sep;2006;0;0;0;0;0;0;0;545;0;0;0;0;0;545;Co;CO(O);Whaling under objection. 545 E sub-areas, 0CM;7
+2006;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2006;Apr;2006;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;IR;;0
+2006;NP;Japan;1420;Japan;Kushiro: research;Sep;2006;Oct;2006;0;0;0;0;0;0;0;35;0;0;0;0;0;35;S;;;0
+2006;NP;Japan;1425;Japan;Ayukawa: research;Apr;2006;May;2006;0;0;0;0;0;0;0;62;0;0;0;0;0;62;S;;Inc. 2 lost;2
+2006;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2006;Aug;2006;0;0;0;6;0;101;51;100;0;0;0;0;0;258;S;;Lost: 1sei, 1Bry;2
+2006;NP;Korea;2470;Korea;"Korea; Illegal catches";Apr;2006;Jul;2006;0;0;0;0;0;0;0;2;0;0;0;0;0;2;I;IR;Infractions (taken deliberately);0
+2006;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2006;Nov;2006;0;0;0;0;0;0;0;0;0;134;3;0;0;137;A;IWC/59/ASW5;Inc. 5 gray lost + 5 'stinky' whales;5
+2006;NP;Alaska N;1990;United States;Alaska Aboriginal;May;2006;Oct;2006;0;0;0;0;0;0;0;0;0;0;39;0;0;39;A;"IR; Sy07";Inc. 8 struck & lost;8
+2006;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2006;Feb;2007;0;0;3;0;0;0;0;0;508;0;0;0;0;511;S*;;"See **. Inc. 3mi lost.  Area V (404mi); VIW (101mi, 3f)";3
+2007;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2007;;2007;0;0;0;43;0;0;0;0;0;0;0;0;0;43;U;EK13;Unofficial information;
+2007;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2007;;2007;0;0;0;0;0;0;0;2;0;0;0;0;0;2;A;IR;;0
+2007;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2007;;2007;0;0;12;0;0;0;0;167;0;0;0;0;0;179;A;IR;Inc. 2 fin & 6 minke struck & lost;0
+2007;NA;Iceland;3510;Iceland;Iceland Small Type;May;2007;Jul;2007;0;0;0;0;0;0;0;6;0;0;0;0;0;6;Cr;;Whaling under reservation.;0
+2007;NA;Iceland;3510;Iceland;Iceland Small Type;Apr;2007;Sep;2007;0;0;0;0;0;0;0;39;0;0;0;0;0;39;S;;Special permit catch inc. 2 lost;2
+2007;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2007;Aug;2007;0;0;0;0;0;0;0;597;0;0;0;0;0;597;Co;CO(O);Whaling under objection. 597 E sub-areas, 0CM;5
+2007;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2007;Mar;2007;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;0
+2007;NP;Japan;1420;Japan;Kushiro: research;Sep;2007;Oct;2007;0;0;0;0;0;0;0;50;0;0;0;0;0;50;S;;;0
+2007;NP;Japan;1425;Japan;Ayukawa: research;Apr;2007;May;2007;0;0;0;0;0;0;0;58;0;0;0;0;0;58;S;;Inc. 1 lost;1
+2007;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2007;Aug;2007;0;0;0;3;0;100;50;100;0;0;0;0;0;253;S;;;0
+2007;NP;Korea;2470;Korea;"Korea; Illegal catches";Mar;2007;Dec;2007;0;0;0;0;0;0;0;22;0;0;0;0;0;22;I;"IR2008; IR2009";Infractions (taken deliberately);0
+2007;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2007;Nov;2007;0;0;0;0;0;0;0;0;0;131;0;0;0;131;A;Bor08;Inc. 3 lost + 2 unfit for consumption (‘stinky’);3
+2007;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2007;Oct;2007;0;0;0;0;0;0;0;0;0;0;63;0;0;63;A;"IR; Sy08";Inc. 22 struck & lost;22
+2007;NP;USA W coast;1980;United States;Makah Aboriginal;Sep;2007;Sep;2007;0;0;0;0;0;0;0;0;0;1;0;0;0;1;A;;1 gray whale struck & lost.;1
+2007;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2007;Mar;2008;0;0;0;0;0;0;0;0;551;0;0;0;0;551;S*;;See **;0
+2008;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2008;;2008;0;0;0;34;0;0;0;0;0;0;0;0;0;34;U;EK13;Unofficial information;
+2008;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2008;Sep;2008;0;0;0;0;0;0;0;0;0;0;4;0;0;4;A;Re12;Inc. 1 struck & lost;1
+2008;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2008;;2008;0;0;0;0;0;0;0;1;0;0;0;0;0;1;A;IR;;0
+2008;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2008;;2008;0;0;14;0;0;0;0;153;0;0;0;0;0;167;A;IR;Inc. 8 struck & lost (3fin & 5mi) & 2 mi infractions;8
+2008;NA;Iceland;3510;Iceland;Iceland Small Type;May;2008;Sep;2008;0;0;0;0;0;0;0;38;0;0;0;0;0;38;Cr;;Whaling under reservation.;2
+2008;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2008;Sep;2008;0;0;0;0;0;0;0;536;0;0;0;0;0;536;Co;CO(O);"Whaling under objection. EB 22; EW 160; ES 230; EN 94; CM 30";4
+2008;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2008;May;2008;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;CO(O);Inc. 1 struck & lost.;1
+2008;NP;Japan;1420;Japan;Kushiro: research;Sep;2008;Oct;2008;0;0;0;0;0;0;0;51;0;0;0;0;0;51;S;;;1
+2008;NP;Japan;1425;Japan;Ayukawa: research;Apr;2008;May;2008;0;0;0;0;0;0;0;61;0;0;0;0;0;61;S;;;1
+2008;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2008;Aug;2008;0;0;0;2;0;100;50;59;0;0;0;0;0;211;S;;;0
+2008;NP;Korea;2470;Korea;"Korea; Illegal catches";May;2008;Dec;2008;0;0;0;0;0;0;0;6;0;0;0;0;0;6;I;IR;;0
+2008;NP;Chukotka;1810;Russia;Russia Aboriginal;Jun;2008;Nov;2008;0;0;0;0;0;0;0;0;0;130;2;0;0;132;A;"IR;IWC/61/ASW3";Inc. 3 gray lost + 10 unfit for consumption (‘stinky’).;3
+2008;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2008;Dec;2008;0;0;0;0;0;0;0;0;0;0;50;0;0;50;A;"IR; Sy09";Inc. 12 struck & lost;12
+2008;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2008;Mar;2009;0;0;1;0;0;0;0;0;680;0;0;0;0;681;S*;;See **. Inc. 295 in VI-SW, 240 in V-SE (Ross Sea) & 144mi + 1fin in V-SW. 1 minke lost.;1
+2009;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2009;;2009;0;0;0;5;1;0;0;0;0;0;0;0;0;6;U;EK13;Unofficial information;
+2009;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2009;Sep;2009;0;0;0;0;0;0;0;0;0;0;4;0;0;4;A;Re12;;
+2009;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2009;;2009;0;0;0;0;0;0;0;4;0;0;0;0;0;4;A;IR;;0
+2009;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;2009;May;2009;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;IR;;0
+2009;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2009;;2009;0;0;10;0;0;0;0;164;0;0;0;0;0;174;A;IR;Inc. 2 lost fin & 11 lost minke;13
+2009;NA;Iceland;3510;Iceland;Iceland Small Type;May;2009;Sep;2009;0;0;0;0;0;0;0;81;0;0;0;0;0;81;Cr;;Whaling under reservation.;3
+2009;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2009;Sep;2009;0;0;125;0;0;0;0;0;0;0;0;0;0;125;Cr;;Whaling under reservation.;0
+2009;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2009;Sep;2009;0;0;0;0;0;0;0;484;0;0;0;0;0;484;Co;CO(O);"Whaling under objection. EB 4; EW 181; ES 250; EN 49.  Excl. 1 by caught minke.";
+2009;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2009;Apr;2009;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;0
+2009;NP;Japan;1420;Japan;Kushiro: research;Sep;2009;Oct;2009;0;0;0;0;0;0;0;59;0;0;0;0;0;59;S;;;
+2009;NP;Japan;1425;Japan;Ayukawa: research;Apr;2009;May;2009;0;0;0;0;0;0;0;63;0;0;0;0;0;63;S;;;3
+2009;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2009;Jul;2009;0;0;0;1;0;101;50;43;0;0;0;0;0;195;S;;Inc 1 lost sei;1
+2009;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2009;Dec;2009;0;0;0;0;0;0;0;16;0;0;0;0;0;16;I;IR;;0
+2009;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2009;Dec;2009;0;0;0;0;0;0;0;0;0;116;0;0;0;116;A;"IR; CO(O)";Inc. 1 lost + 6 unfit for consumption (‘stinky’).;1
+2009;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2009;Oct;2009;0;0;0;0;0;0;0;0;0;0;38;0;0;38;A;IR;Inc. 7 struck & lost (inc. 2 with estimated survival = poor or died);7
+2009;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2009;Mar;2010;0;0;1;0;0;0;0;0;507;0;0;0;0;508;S*;;See **;1
+2010;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2010;;2010;0;0;0;22;0;0;0;0;0;0;0;0;0;22;U;KE19;Unofficial information;
+2010;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2010;Sep;2010;0;0;0;0;0;0;0;0;0;0;4;0;0;4;A;Re12;Inc. 2 struck & lost;2
+2010;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2010;;2010;0;0;0;0;0;0;0;9;0;0;0;0;0;9;A;IR;;0
+2010;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;2010;May;2010;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;IRrev;;0
+2010;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2010;;2010;0;0;6;0;9;0;0;187;0;0;0;0;0;202;A;IRrev;"Inc. 8 lost: 1 fin & 7 minke.  Update rec'd June 2013; original IR listed 1 less fin & 1 less minke.";8
+2010;NA;Iceland;3510;Iceland;Iceland Small Type;May;2010;Sep;2010;0;0;0;0;0;0;0;60;0;0;0;0;0;60;Cr;CO(O);Whaling under reservation.;1
+2010;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2010;Sep;2010;0;0;148;0;0;0;0;0;0;0;0;0;0;148;Cr;CO(O);Whaling under reservation.;6
+2010;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2010;Sep;2010;0;0;0;0;0;0;0;468;0;0;0;0;0;468;Co;CO(O);"Whaling under objection. EB 18; EW 145; ES 270; EN 34; CM 1";2
+2010;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2010;Apr;2010;0;0;0;0;3;0;0;0;0;0;0;0;0;3;A;CO(O);;0
+2010;NP;Japan;1420;Japan;Kushiro: research;Sep;2010;Oct;2010;0;0;0;0;0;0;0;60;0;0;0;0;0;60;S;CO(O);;0
+2010;NP;Japan;1425;Japan;Ayukawa: research;Apr;2010;Jun;2010;0;0;0;0;0;0;0;45;0;0;0;0;0;45;S;CO(O);;0
+2010;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2010;Aug;2010;0;0;0;3;0;100;50;14;0;0;0;0;0;167;S;CO(O);;0
+2010;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2010;Aug;2010;0;0;0;0;0;0;1;11;0;0;0;0;0;12;I;IR;Illegal catches;0
+2010;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2010;Dec;2010;0;0;0;0;0;0;0;0;0;118;2;0;0;120;A;"IR; CO(O)";Inc. 1 unfit for consumption (‘stinky’).;0
+2010;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2010;Dec;2010;0;0;0;0;0;0;0;0;0;0;71;0;0;71;A;IR;Inc. 26 struck & lost (inc. 17 with estimated survival = poor or died);26
+2010;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2010;Feb;2011;0;0;2;0;0;0;0;0;171;0;0;0;0;173;S*;CO(O);See **. Inc. 1 minke lost;1
+2011;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2011;;2011;0;0;0;14;0;0;0;0;0;0;0;0;0;14;U;KE19;Unofficial information;
+2011;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2011;Sep;2011;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);Circular IWC.ALL.172 (9/12/2011);0
+2011;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2011;;2011;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;IR;Inc. 1 lost minke;1
+2011;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2011;;2011;0;0;5;0;8;0;0;179;0;0;1;0;0;193;A;IR;Inc. 6 lost minke;6
+2011;NA;Iceland;3510;Iceland;Iceland Small Type;Apr;2011;Sep;2011;0;0;0;0;0;0;0;58;0;0;0;0;0;58;Cr;CO(O);Whaling under reservation.;0
+2011;NA;Atlantic NE;3880;Norway;Norway Small Whale;May;2011;Aug;2011;0;0;0;0;0;0;0;533;0;0;0;0;0;533;Co;CO(O);"Whaling under objection. EB 100; EW 218; ES 201; EN 14; CM 0.  Inc 6 lost.";6
+2011;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2011;Apr;2011;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;CO(O);Inc. 1 struck & lost;1
+2011;NP;Japan;1420;Japan;Kushiro: research;May;2011;Jun;2011;0;0;0;0;0;0;0;17;0;0;0;0;0;17;S;CO(O);Spring hunt conducted at Kushiro as Ayukawa was destroyed in the tsunami.;0
+2011;NP;Japan;1420;Japan;Kushiro: research;Sep;2011;Oct;2011;0;0;0;0;0;0;0;60;0;0;0;0;0;60;S;CO(O);;0
+2011;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2011;Aug;2011;0;0;0;1;0;96;50;49;0;0;0;0;0;196;S;CO(O);Inc. 1 lost sei whale;1
+2011;NP;Korea;2470;Korea;"Korea; Illegal catches";Apr;2011;Aug;2011;0;0;0;0;0;0;0;21;0;0;0;0;0;21;I;IR;Illegal catches;0
+2011;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2011;Dec;2011;0;0;0;0;0;0;0;0;0;130;0;0;0;130;A;"IR; CO(O)";Inc 2 lost + 2 unfit for consumption (‘stinky’).;2
+2011;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2011;Oct;2011;0;0;0;0;0;0;0;0;0;0;51;0;0;51;A;IR;Inc. 13 struck & lost (inc. 11 with estimated survival = poor or died);13
+2011;SH;Antarctic;6600;Japan;Nisshin Maru;Jan;2012;Mar;2012;0;0;1;0;0;0;0;0;266;0;0;0;0;267;S*;CO(O);See **;0
+2012;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2012;;2012;0;0;0;3;0;0;0;0;0;0;0;0;0;3;U;KE19;Unofficial information;
+2012;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2012;Sep;2012;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);;0
+2012;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2012;;2012;0;0;0;0;0;0;0;4;0;0;0;0;0;4;A;IR;;0
+2012;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2012;;2012;0;0;5;0;10;0;0;148;0;0;0;0;0;163;A;IR;Inc. 8 lost: 4 minke, 3 humpback & 1 fin.;8
+2012;NA;Iceland;3510;Iceland;Iceland Small Type;Apr;2012;Sep;2012;0;0;0;0;0;0;0;52;0;0;0;0;0;52;Cr;CO(O);Whaling under reservation. Inc. 3 lost.;3
+2012;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2012;Sep;2012;0;0;0;0;0;0;0;464;0;0;0;0;0;464;Co;CO(O);"Whaling under objection. EB 6; EW 200; ES 244; EN 14; CM 0.  Inc 6 lost.";6
+2012;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2012;Apr;2012;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;CO(O);Inc. 1 struck & lost;1
+2012;NP;Japan;1420;Japan;Kushiro: research;Sep;2012;Oct;2012;0;0;0;0;0;0;0;48;0;0;0;0;0;48;S;CO(O);;0
+2012;NP;Japan;1425;Japan;Ayukawa: research;Apr;2012;May;2012;0;0;0;0;0;0;0;62;0;0;0;0;0;62;S;CO(O);Inc. 2 lost;2
+2012;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2012;Jul;2012;0;0;0;3;0;100;34;74;0;0;0;0;0;211;S;CO(O);;0
+2012;NP;Korea;2470;Korea;"Korea; Illegal catches";May;2012;Dec;2012;0;0;0;0;0;0;0;4;0;0;0;0;0;4;I;IR;Illegal catches;0
+2012;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2012;Dec;2012;0;0;0;0;0;0;0;0;0;143;0;0;0;143;A;"IR; CO(O)";Inc. 4 lost + 8 unfit for consumption (‘stinky’).;4
+2012;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2012;Nov;2012;0;0;0;0;0;0;0;0;0;0;69;0;0;69;A;IR;Inc. 14 struck & lost (inc. 9 with estimated survival = poor or died);14
+2012;SH;Antarctic;6600;Japan;Nisshin Maru;Jan;2013;Mar;2013;0;0;0;0;0;0;0;0;103;0;0;0;0;103;S*;CO(O);See **;0
+2013;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2013;;2013;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;KE19;Unofficial information;
+2013;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2013;Sep;2013;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);;0
+2013;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2013;;2013;0;0;0;0;0;0;0;6;0;0;0;0;0;6;A;"IR;PR";Inc. 2 lost minke;2
+2013;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2013;;2013;0;0;9;0;8;0;0;175;0;0;0;0;0;192;A;IR;Inc. 10 lost: 9 minke & 1 humpback;10
+2013;NA;Iceland;3510;Iceland;Iceland Small Type;May;2013;Aug;2013;0;0;0;0;0;0;0;35;0;0;0;0;0;35;Cr;CO(O);Whaling under reservation.;0
+2013;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2013;Sep;2013;0;0;134;0;0;0;0;0;0;0;0;0;0;134;Cr;CO(O);Whaling under reservation. Inc. 5 lost.  One whale listed as fin was a fin/blue hybrid.;5
+2013;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2013;Sep;2013;0;0;0;0;0;0;0;594;0;0;0;0;0;594;Co;CO(O);"Whaling under objection. EB: 68; EN: 3; ES: 282; EW: 241.  Inc. 6 lost.";6
+2013;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2013;Apr;2013;0;0;0;0;4;0;0;0;0;0;0;0;0;4;A;CO(O);;0
+2013;NP;Japan;1420;Japan;Kushiro: research;Sep;2013;Oct;2013;0;0;0;0;0;0;0;58;0;0;0;0;0;58;S;CO(O);No lost.;0
+2013;NP;Japan;1425;Japan;Ayukawa: research;Apr;2013;Jun;2013;0;0;0;0;0;0;0;34;0;0;0;0;0;34;S;CO(O);No lost.;0
+2013;NP;Pacific NW;6605;Japan;Nisshin Maru;Jul;2013;Oct;2013;0;0;0;1;0;100;28;3;0;0;0;0;0;132;S;CO(O);No lost.;0
+2013;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2013;Sep;2013;0;0;0;0;0;0;0;12;0;0;0;0;0;12;I;IR;Illegal catches;0
+2013;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2013;Dec;2013;0;0;0;0;0;0;0;0;0;127;1;0;0;128;A;"IR; CO(O)";Inc. 2 gray lost + 2 unfit for consumption (‘stinky’).;2
+2013;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2013;Dec;2013;0;0;0;0;0;0;0;0;0;0;57;0;0;57;A;CO(O);"Inc. 11 struck & lost (estimated survival: 4 poor or died; 3 unknown; 4 fair)";11
+2013;SH;Antarctic;6600;Japan;Nisshin Maru;Jan;2014;Mar;2014;0;0;0;0;0;0;0;0;251;0;0;0;0;251;S*;CO(O);See **. Inc. 1 lost minke.;1
+2014;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2014;;2014;0;0;0;31;0;0;0;0;0;0;0;0;0;31;U;KE19;Unofficial information;
+2014;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2014;Aug;2014;0;0;0;0;0;0;0;0;0;0;2;0;0;2;A;CO(O);;0
+2014;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Jun;2014;Sep;2014;0;0;0;0;0;0;0;11;0;0;0;0;0;11;A;"CO(Grl); IR; PR";;0
+2014;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Feb;2014;Nov;2014;0;0;12;0;7;0;0;146;0;0;0;0;0;165;A;"CO(Grl); IR";Inc. 4 lost: 2 minke, 1 fin & 1 humpback;4
+2014;NA;Iceland;3510;Iceland;Iceland Small Type;Apr;2014;Oct;2014;0;0;0;0;0;0;0;24;0;0;0;0;0;24;Cr;CO(O);Whaling under reservation.  Inc 1 lost;1
+2014;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2014;Sep;2014;0;0;137;0;0;0;0;0;0;0;0;0;0;137;Cr;CO(O);Whaling under reservation. Inc. 3 lost.;3
+2014;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2014;Aug;2014;0;0;0;0;0;0;0;736;0;0;0;0;0;736;Co;CO(O);"Whaling under objection. EB: 108; EN: 20; ES: 377; EW: 231.  Inc. 5 lost.";5
+2014;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2014;;2014;0;0;0;0;2;0;0;0;0;0;0;0;0;2;A;CO(O);2 struck & lost;2
+2014;NP;Japan;1420;Japan;Kushiro: research;Sep;2014;Sep;2014;0;0;0;0;0;0;0;51;0;0;0;0;0;51;S;CO(O);No lost.;0
+2014;NP;Japan;1425;Japan;Ayukawa: research;Apr;2014;Jun;2014;0;0;0;0;0;0;0;30;0;0;0;0;0;30;S;CO(O);No lost.;0
+2014;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2014;Jul;2014;0;0;0;0;0;90;25;0;0;0;0;0;0;115;S;CO(O);No lost.;0
+2014;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2014;Nov;2014;0;0;0;0;0;0;0;11;0;0;0;0;0;11;I;IR;Illegal catches;0
+2014;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2014;Nov;2014;0;0;0;0;0;0;0;0;0;124;0;0;0;124;A;"IR; CO(O)";Inc. 2 gray lost;2
+2014;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2014;Oct;2014;0;0;0;0;0;0;0;0;0;0;53;0;0;53;A;CO(O);"Inc. 15 struck & lost (estimated survival: 10 poor or died; 2 unknown; 1 fair; 2 excellent)";15
+2015;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2015;;2015;0;0;0;7;0;0;0;0;0;0;0;0;0;7;U;KE19;Unofficial information;
+2015;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Sep;2015;Sep;2015;0;0;0;0;0;0;0;0;0;0;2;0;0;2;A;CO(O);Inc. 1 struck & lost;1
+2015;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Aug;2015;Sep;2015;0;0;0;0;0;0;0;6;0;0;0;0;0;6;A;"CO(Grl); IR";;0
+2015;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;2015;Dec;2015;0;0;12;0;6;0;0;133;0;0;1;0;0;152;A;"CO(Grl); IR";Inc. 5 lost: 3 minke & 2 fin;5
+2015;NA;Iceland;3510;Iceland;Iceland Small Type;May;2015;Aug;2015;0;0;0;0;0;0;0;29;0;0;0;0;0;29;Cr;CO(O);Whaling under reservation.;0
+2015;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2015;Sep;2015;0;0;155;0;0;0;0;0;0;0;0;0;0;155;Cr;CO(O);Whaling under reservation.;1
+2015;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2015;Sep;2015;0;0;0;0;0;0;0;660;0;0;0;0;0;660;Co;CO(O);"Whaling under objection. EB: 93; EN: 4; ES: 426; EW: 137";0
+2015;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2015;Apr;2015;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;0
+2015;NP;Japan;1420;Japan;Kushiro: research;Sep;2015;Oct;2015;0;0;0;0;0;0;0;51;0;0;0;0;0;51;S;CO(O);;0
+2015;NP;Japan;1425;Japan;Ayukawa: research;Apr;2015;May;2015;0;0;0;0;0;0;0;19;0;0;0;0;0;19;S;CO(O);;0
+2015;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2015;Aug;2015;0;0;0;0;0;90;25;0;0;0;0;0;0;115;S;CO(O);;0
+2015;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2015;Oct;2015;0;0;1;0;0;0;0;14;0;0;0;0;1;16;I;IR;Illegal catches inc. 1 unidentified whale. Fin wh. was reported as right in IR but corrected at IWC66 Infractions sub-committee meeting;0
+2015;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2015;Nov;2015;0;0;0;0;0;0;0;0;0;125;0;0;0;125;A;;Inc. 1 struck but lost and 1 stinky;1
+2015;NP;Alaska N;1990;United States;Alaska Aboriginal;Mar;2015;Oct;2015;0;0;0;0;0;0;0;0;0;0;49;0;0;49;A;;"Inc. 10 struck & lost (estimated survival: 6 poor or died; 4 excellent). Excludes one found dead from possible killer whale predation.";10
+2015;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2015;Feb;2016;0;0;0;0;0;0;0;0;335;0;0;0;0;335;S;CO(O);Inc. 2 lost minke. Note: no Antarctic catch in 2014/5;2
+2016;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2016;;2016;0;0;0;12;0;0;0;0;0;0;0;0;0;12;U;KE19;Unofficial information;
+2016;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2016;Sep;2016;0;0;0;0;0;0;0;0;0;0;2;0;0;2;A;CO(O);;0
+2016;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2016;;2016;0;0;0;0;0;0;0;15;0;0;0;0;0;15;A;IR;;0
+2016;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2016;;2016;0;0;9;0;5;0;0;148;0;0;0;0;0;162;A;IR;Inc. 3 lost: 2 minke & 1 fin;3
+2016;NA;Iceland;3510;Iceland;Iceland Small Type;Apr;2016;Aug;2016;0;0;0;0;0;0;0;46;0;0;0;0;0;46;Cr;CO(O);Whaling under reservation.;0
+2016;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";;2016;;2016;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;;No fin whale catch in 2016 or 2017;0
+2016;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2016;Aug;2016;0;0;0;0;0;0;0;591;0;0;0;0;0;591;Co;CO(O);"Whaling under objection. Inc. 5 lost.  EB: 60; EN: 15; ES: 424; EW: 92";5
+2016;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2016;;2016;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;CO(O);No catch in 2016;0
+2016;NP;Japan;1420;Japan;Kushiro: research;Sep;2016;Oct;2016;0;0;0;0;0;0;1;21;0;0;0;0;0;22;S;CO(O);Inc. 1 Bryde's shot by mistake;0
+2016;NP;Japan;1425;Japan;Ayukawa: research;Apr;2016;May;2016;0;0;0;0;0;0;0;16;0;0;0;0;0;16;S;CO(O);;0
+2016;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2016;Jul;2016;0;0;0;0;0;90;25;0;0;0;0;0;0;115;S;CO(O);;0
+2016;NP;Korea;2470;Korea;"Korea; Illegal catches";;2016;;2016;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;IR;No catch taken;0
+2016;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2016;Nov;2016;0;0;0;0;0;0;0;0;0;120;2;0;0;122;A;;Inc. 1 'stinky' whale;0
+2016;NP;Alaska N;1990;United States;Alaska Aboriginal;Mar;2016;Oct;2016;0;0;0;0;1;0;0;2;0;0;59;0;0;62;A;;"Inc. 12 bowhead struck & lost (estimated survival: 9 poor or died; 3 unknown) + Unauthorized take of 2 mi & 1hbk";12
+2016;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2016;Mar;2017;0;0;0;0;0;0;0;0;335;0;0;0;0;335;S;CO(O);Inc. 2 lost minke. Note: no Antarctic catch in 2014/5;2
+2017;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2017;;2017;0;0;0;27;0;0;0;0;0;0;0;0;0;27;U;KE19;Unofficial information;
+2017;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2017;Aug;2017;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;CO(O);;0
+2017;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2017;;2017;0;0;0;0;0;0;0;10;0;0;0;0;0;10;A;IR;Inc. 1 lost: 1mi;1
+2017;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2017;;2017;0;0;8;0;2;0;0;133;0;0;0;0;0;143;A;IR;"Inc. 5 lost: 1Fin; 4 mi";5
+2017;NA;Iceland;3510;Iceland;Iceland Small Type;Jun;2017;Jul;2017;0;0;0;0;0;0;0;17;0;0;0;0;0;17;Cr;CO(O);Whaling under reservation.;0
+2017;NA;Atlantic NE;3880;Norway;Norway Small Whale;Apr;2017;Aug;2017;0;0;0;0;0;0;0;432;0;0;0;0;0;432;Co;CO(O);"Whaling under objection. Inc. 1 lost.  EB: 16; EN: 7; ES: 375; EW: 34";1
+2017;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2017;Mar;2017;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;0
+2017;NP;Japan;1420;Japan;Kushiro: research;Sep;2017;Oct;2017;0;0;0;0;0;0;0;35;0;0;0;0;0;35;S;CO(O);;0
+2017;NP;Japan;1427;Japan;Abashiri: research;Jun;2017;Jul;2017;0;0;0;0;0;0;0;47;0;0;0;0;0;47;S;CO(O);;0
+2017;NP;Japan;1426;Japan;Hachinohe: research;Jul;2017;Jul;2017;0;0;0;0;0;0;0;3;0;0;0;0;0;3;S;CO(O);;0
+2017;NP;Pacific NW;6605;Japan;Nisshin Maru;Jun;2017;Sep;2017;0;0;0;0;0;134;0;44;0;0;0;0;0;178;S;CO(O);Inc 1 lost mi;1
+2017;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2017;Jul;2017;0;0;0;0;0;0;0;2;0;0;0;0;0;2;I;IR;Illegal catches;0
+2017;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2017;Dec;2017;0;0;0;0;0;0;0;0;0;119;1;0;0;120;A;CO(O);0 'stinky' whales;0
+2017;NP;Alaska N;1990;United States;Alaska Aboriginal;Jan;2017;Oct;2017;0;0;0;0;0;0;0;0;0;1;57;0;0;58;A;CO(O);"Inc. 7 bowhead struck & lost (estimated survival: 5 poor or died; 2 fair). Unauthorized take: 1gray";7
+2017;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2017;Feb;2018;0;0;0;0;0;0;0;0;333;0;0;0;0;333;S;CO(O);;0
+2018;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2018;;2018;0;0;0;15;0;0;0;0;0;0;0;0;0;15;U;KE19;Unofficial information;
+2018;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Jun;2018;Aug;2018;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);;0
+2018;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2018;;2018;0;0;0;0;0;0;0;2;0;0;0;0;0;2;A;IR;;0
+2018;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2018;;2018;0;0;7;0;6;0;0;116;0;0;0;0;0;129;A;IR;Inc.  lost: 1Fin, 4mi;5
+2018;NA;Iceland;3510;Iceland;Iceland Small Type;Jun;2018;Jun;2018;0;0;0;0;0;0;0;6;0;0;0;0;0;6;Cr;CO(O);Whaling under reservation.;0
+2018;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2018;Sep;2018;0;0;146;0;0;0;0;0;0;0;0;0;0;146;Cr;CO(O);Whaling under reservation. Two whales listed as fin were fin/blue hybrids.;0
+2018;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2018;Sep;2018;0;0;0;0;0;0;0;454;0;0;0;0;0;454;Co;CO(O);"Whaling under objection. Inc. 2 lost.  EB: 123; EN: 0; ES: 214; EW: 117; CM: 0";2
+2018;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2018;;2018;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;CO(O);No catch in 2018;0
+2018;NP;Japan;1427;Japan;Abashiri: research;Aug;2018;Aug;2018;0;0;0;0;0;0;0;47;0;0;0;0;0;47;S;CO(O);;0
+2018;NP;Japan;1426;Japan;Hachinohe: research;May;2018;May;2018;0;0;0;0;0;0;0;33;0;0;0;0;0;33;S;CO(O);;0
+2018;NP;Japan;1420;Japan;Kushiro: research;Sep;2018;Oct;2018;0;0;0;0;0;0;0;29;0;0;0;0;0;29;S;CO(O);;0
+2018;NP;Japan;1425;Japan;Ayukawa: research;Apr;2018;Apr;2018;0;0;0;0;0;0;0;19;0;0;0;0;0;19;S;CO(O);Inc 1 lost mi;1
+2018;NP;Pacific NW;6605;Japan;Nisshin Maru;May;2018;Aug;2018;0;0;0;0;0;135;0;43;0;0;0;0;0;178;S;CO(O);Inc 1 lost sei;1
+2018;NP;Korea;2470;Korea;"Korea; Illegal catches";;2018;;2018;0;0;0;0;0;0;0;2;0;0;0;0;0;2;I;IR;Illegal catches;0
+2018;NP;Chukotka;1810;Russia;Russia Aboriginal;Apr;2018;Nov;2018;0;0;0;0;0;0;0;0;0;107;0;0;0;107;A;CO(O);Inc 1 lost gray & 1 whale which was a bit 'stinky' but was utilised.;1
+2018;NP;Alaska N;1990;United States;Alaska Aboriginal;Jan;2018;Oct;2018;0;0;0;0;0;0;0;0;0;1;68;0;0;69;A;CO(O);"Inc. 21 bowhead struck & lost (estimated survival: 15 poor or died; 2 fair, 1 excellent, 3 unknown). Unauthorized take of 1gray";21
+2018;SH;Antarctic;6600;Japan;Nisshin Maru;Dec;2018;Feb;2019;0;0;0;0;0;0;0;0;334;0;0;0;0;334;S;CO(O);Area III.  Inc 1 lost mi;1
+2019;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2019;;2019;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;;No information. 2016-18 average used.;
+2019;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Jun;2019;Aug;2019;0;0;0;0;0;0;0;0;0;0;4;0;0;4;A;CO(O);;0
+2019;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2019;;2019;0;0;0;0;0;0;0;11;0;0;0;0;0;11;A;IR;;0
+2019;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2019;;2019;0;0;8;0;4;0;0;160;0;0;0;0;0;172;A;IR;Inc.  lost: 1Fin, 7mi;8
+2019;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";;2019;;2019;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;;No catch in 2019 or 2020;0
+2019;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2019;Sep;2019;0;0;0;0;0;0;0;429;0;0;0;0;0;429;Co;CO(O);"Whaling under objection. Inc. 2 lost.  EB: 110; EN: 3; ES: 241; EW: 75; CM: 0";2
+2019;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Mar;2019;Apr;2019;0;0;0;0;3;0;0;0;0;0;0;0;0;3;A;CO(O);;0
+2019;NP;Japan;1427;Japan;Abashiri: research;Jun;2019;Jun;2019;0;0;0;0;0;0;0;32;0;0;0;0;0;32;S;CO(O);;0
+2019;NP;Japan;1270;Japan;Kushiro;Jul;2019;Sep;2019;0;0;0;0;0;0;0;33;0;0;0;0;0;33;C;CO(O);Commercial catch taken after Japan left the IWC;0
+2019;NP;Japan;1426;Japan;Hachinohe: research;May;2019;May;2019;0;0;0;0;0;0;0;27;0;0;0;0;0;27;S;CO(O);;0
+2019;NP;Japan;1425;Japan;Ayukawa: research;Apr;2019;Apr;2019;0;0;0;0;0;0;0;20;0;0;0;0;0;20;S;CO(O);;0
+2019;NP;Pacific NW;6066;Japan;Nisshin Maru;Jul;2019;Sep;2019;0;0;0;0;0;25;187;11;0;0;0;0;0;223;C;CO(O);;0
+2019;NP;Korea;2470;Korea;"Korea; Illegal catches";;2019;;2019;0;0;0;0;0;0;0;6;0;0;0;0;0;6;I;IR;Illegal catches;0
+2019;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2019;Dec;2019;0;0;0;0;0;0;0;0;0;137;1;0;0;138;A;CO(O);Inc 2 lost gray & 3 'stinky' gray whales;2
+2019;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2019;Nov;2019;0;0;0;0;0;0;0;0;0;0;36;0;0;36;A;CO(O);"Inc. 6 bowhead struck & lost (estimated survival: 2 died; 1 excellent, 3 unknown).";6
+2020;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2020;;2020;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;;No information. 2016-18 average used.;
+2020;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2020;Aug;2020;0;0;0;0;0;0;0;0;0;0;1;0;0;1;A;CO(O);;0
+2020;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2020;;2020;0;0;0;0;0;0;0;20;0;0;0;0;0;20;A;IR;;0
+2020;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2020;;2020;0;0;3;0;4;0;0;162;0;0;0;0;0;169;A;IR;Inc.  lost: 7mi.;7
+2020;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2020;Sep;2020;0;0;0;0;0;0;0;503;0;0;0;0;0;503;Co;CO(O);"Whaling under objection. Inc. 2 lost.  EB: 176; EN: 34; ES: 230; EW: 61; CM: 0";2
+2020;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2020;;2020;0;0;0;0;0;0;0;0;0;0;0;0;0;0;-;CO(O);No catch in 2020;0
+2020;NP;Japan;1272;Japan;Hachinohe;May;2020;Jun;2020;0;0;0;0;0;0;0;31;0;0;0;0;0;31;C;CO(O);;0
+2020;NP;Japan;1271;Japan;Ayukawa;Apr;2020;Jun;2020;0;0;0;0;0;0;0;17;0;0;0;0;0;17;C;CO(O);;0
+2020;NP;Japan;1273;Japan;Abashiri;Aug;2020;Oct;2020;0;0;0;0;0;0;0;21;0;0;0;0;0;21;C;CO(O);;0
+2020;NP;Japan;1270;Japan;Kushiro;Aug;2020;Oct;2020;0;0;0;0;0;0;0;26;0;0;0;0;0;26;C;CO(O);;0
+2020;NP;Pacific NW;6066;Japan;Nisshin Maru;Mar;2020;Nov;2020;0;0;0;0;0;25;187;0;0;0;0;0;0;212;C;CO(O);;
+2020;NP;Korea;2470;Korea;"Korea; Illegal catches";Jun;2020;Jun;2020;0;0;0;0;0;0;0;2;0;0;0;0;0;2;I;IR;Illegal catches;0
+2020;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2020;Dec;2020;0;0;0;0;0;0;0;0;0;136;0;0;0;136;A;CO(O);Inc 3 lost gray & 2 'stinky' gray whales;3
+2020;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2020;Sep;2020;0;0;0;0;0;0;0;0;0;0;69;0;0;69;A;CO(O);"Inc. 15 bowhead struck & lost (estimated survival: 8 died; 5 poor, 1 excellent, 1 fair). ";15
+2021;IO;Indonesia;4940;Indonesia;Lamalera, Savu Sea;;2021;;2021;0;0;0;18;0;0;0;0;0;0;0;0;0;18;U;;No information. 2016-18 average used.;
+2021;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;;2021;;2021;0;0;0;0;0;0;0;0;0;0;2;0;0;2;A;CO(O);;0
+2021;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;;2021;;2021;0;0;0;0;0;0;0;21;0;0;0;0;0;21;A;IR;;0
+2021;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;;2021;;2021;0;0;2;0;5;0;0;177;0;0;0;0;0;184;A;IR;Inc.  lost: 10 minkes;10
+2021;NA;Iceland;3510;Iceland;Iceland Small Type;Aug;2021;Aug;2021;0;0;0;0;0;0;0;1;0;0;0;0;0;1;Cr;CO(O);Whaling under reservation.;0
+2021;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2021;Sep;2021;0;0;0;0;0;0;0;577;0;0;0;0;0;577;Co;CO(O);"Whaling under objection. Inc. 9 lost.  EB: 359; EN: 39; ES: 103; EW: 76; CM: 0";9
+2021;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";May;2021;May;2021;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;0
+2021;NP;Japan;1271;Japan;Ayukawa;Apr;2021;Jun;2021;0;0;0;0;0;0;0;19;0;0;0;0;0;19;C;CO(O);;0
+2021;NP;Japan;1270;Japan;Kushiro;Aug;2021;Oct;2021;0;0;0;0;0;0;0;18;0;0;0;0;0;18;C;CO(O);;0
+2021;NP;Japan;1272;Japan;Hachinohe;Apr;2021;Jun;2021;0;0;0;0;0;0;0;36;0;0;0;0;0;36;C;CO(O);;0
+2021;NP;Japan;1273;Japan;Abashiri;Jun;2021;Jul;2021;0;0;0;0;0;0;0;18;0;0;0;0;0;18;C;CO(O);;0
+2021;NP;Pacific NW;6066;Japan;Nisshin Maru;Jun;2021;Nov;2021;0;0;0;0;0;25;187;0;0;0;0;0;0;212;C;CO(O);;0
+2021;NP;Korea;2470;Korea;"Korea; Illegal catches";Jan;2021;Oct;2021;0;0;0;0;0;0;0;12;0;0;0;0;0;12;I;IR;Illegal catches;0
+2021;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2021;Nov;2021;0;0;0;0;0;0;0;0;0;127;0;0;0;127;A;CO(O);Inc 1 lost gray & 4 'stinky' gray whales;1
+2021;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2021;Dec;2021;0;0;0;0;0;0;0;0;0;0;70;0;0;70;A;CO(O);"Inc. 13 bowhead struck & lost (estimated survival:  4 died; 5 poor, 2 fair, 2 good/excellent). ";13
+2022;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Apr;2022;Mar;2023;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);dates refer to harvest season;0
+2022;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Jul;2022;Sep;2022;0;0;0;0;0;0;0;17;0;0;0;0;0;17;A;CO(O);;
+2022;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;2022;Nov;2022;0;0;4;0;1;0;0;149;0;0;1;0;0;155;A;CO(O);"Included: 10 struck and lost minke whales; Not included 1 bycaught humpback whale";10
+2022;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Jun;2022;Sep;2022;0;0;148;0;0;0;0;0;0;0;0;0;0;148;Cr;CO(O);;3
+2022;NA;Atlantic N;3882;Norway;Norway Small Whale;May;2022;Jun;2022;0;0;0;0;0;0;0;581;0;0;0;0;0;581;Co;CO(O);162 in EB, 31 in EN, 68 in ES, 320 in EW;5
+2022;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2022;Apr;2022;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);;1
+2022;NP;Japan;1273;Japan;Abashiri;Jun;2022;Jun;2022;0;0;0;0;0;0;0;25;0;0;0;0;0;25;C;CO(O);;0
+2022;NP;Japan;1270;Japan;Kushiro;Jul;2022;Jul;2022;0;0;0;0;0;0;0;11;0;0;0;0;0;11;C;CO(O);;0
+2022;NP;Japan;1272;Japan;Hachinohe;Apr;2022;May;2022;0;0;0;0;0;0;0;22;0;0;0;0;0;22;C;CO(O);;0
+2022;NP;Pacific NW;6066;Japan;Nisshin Maru;Jun;2022;Nov;2022;0;0;0;0;0;25;187;0;0;0;0;0;0;212;C;CO(O);;0
+2022;NP;Korea;2470;Korea;;Apr;2022;Apr;2022;0;0;0;0;0;0;0;5;0;0;0;0;0;5;I;IR;;
+2022;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2022;Nov;2022;0;0;0;0;0;0;0;0;0;124;0;0;0;124;A;CO(O);15 were struck and lost (estimated chance of survival: 2 excellent,1 good , 1 fair, 5  poor, 6 died);5
+2022;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2022;Dec;2022;0;0;0;0;0;0;0;0;0;0;68;0;0;68;A;CO(O);;15
+2023;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Aug;2023;;;0;0;0;0;1;0;0;0;0;0;0;0;0;1;I;IR;illegal shooting. Police infomed authorities that the individual survived;
+2023;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Jul;2023;Oct;2023;0;0;0;0;0;0;0;18;0;0;0;0;0;18;A;CO(O);5 M, 13 F;0
+2023;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Oct;2023;;;0;0;0;0;0;0;0;1;0;0;0;0;0;1;I;IR;1 female minke killed without a licence;
+2023;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Apr;2023;Nov;2023;0;0;2;0;2;0;0;164;0;0;0;0;0;168;A;CO(O);"Fin: a carrion was reported but not included in catches; Hbk: a bycaught female is not included; Mi: 5 struck and lost";5
+2023;NA;Iceland W;3540;Iceland;"Hvalfjordur; Hvalur H/F";Sep;2023;Sep;2023;0;0;24;0;0;0;0;0;0;0;0;0;0;24;Cr;CO(O);14F,9M,1 struck and lost;1
+2023;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2023;Sep;2023;0;0;0;0;0;0;0;507;0;0;0;0;0;507;Co;CO(O);"169 in EB, 15 in EN, 99 in ES, 224 in EW; 7 lost included in the total";7
+2023;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";;2023;;2023;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);1 female;0
+2023;NP;Japan;1273;Japan;Abashiri;Apr;2023;Apr;2023;0;0;0;0;0;0;0;16;0;0;0;0;0;16;C;CO(O);;
+2023;NP;Japan;1270;Japan;Kushiro;Apr;2023;Oct;2023;0;0;0;0;0;0;0;31;0;0;0;0;0;31;C;CO(O);;
+2023;NP;Japan;1271;Japan;Ayukawa;Mar;2023;Jun;2023;0;0;0;0;0;0;0;4;0;0;0;0;0;4;C;CO(O);;
+2023;NP;Japan;1272;Japan;Hachinohe;Apr;2023;Jul;2023;0;0;0;0;0;0;0;32;0;0;0;0;0;32;C;CO(O);;
+2023;NP;Pacific NW;6066;Japan;Nisshin Maru;May;2023;Oct;2023;0;0;0;0;0;24;187;0;0;0;0;0;0;211;C;CO(O);;
+2023;NP;Korea;2470;Korea;;May;2023;Jul;2023;0;0;0;0;0;0;0;17;0;0;0;0;0;17;I;IR;incl. 94 sacks of meat whale estimated to be derived from 2 whales;
+2023;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2023;Nov;2023;0;0;0;0;0;0;0;0;0;130;1;0;0;131;A;CO(O);"Gray: 67F,63M,1 struck ad lost,5 stinky; 1 F Bowhead";1
+2023;NP;Alaska N;1990;United States;Alaska Aboriginal;Apr;2023;Oct;2023;0;0;0;0;0;0;0;0;0;0;55;0;0;55;A;IR;19 M ( of which 1 calf), 26 F, 10 struck and lost;10
+2024;NA;W.Indies;2930;Saint Vincent & the Grenadines;"Bequia Aboriginal; St.Vincent & G";Apr;2024;Apr;2024;0;0;0;0;1;0;0;0;0;0;0;0;0;1;A;CO(O);1 female;0
+2024;NP;Japan;1270;Japan;Kushiro;Apr;2024;Oct;2024;0;0;0;0;0;0;4;25;0;0;0;0;0;29;C;CO(O);;0
+2024;NP;Japan;1272;Japan;Hachinohe;Apr;2024;Jun;2024;0;0;0;0;0;0;0;36;0;0;0;0;0;36;C;CO(O);;0
+2024;NP;Japan;1271;Japan;Ayukawa;Apr;2024;Aug;2024;0;0;0;0;0;0;0;10;0;0;0;0;0;10;C;CO(O);;0
+2024;NP;Japan;1273;Japan;Abashiri;Apr;2024;Apr;2024;0;0;0;0;0;0;0;16;0;0;0;0;0;16;C;CO(O);;0
+2024;NP;Pacific NW;6067;Japan;Kangei Maru;May;2024;Dec;2024;0;0;30;0;0;26;175;0;0;0;0;0;0;231;C;CO(O);;0
+2024;NP;Korea;2470;Korea;;Apr;2024;;;0;0;0;0;0;0;0;1;0;0;0;0;0;1;I;IR;;0
+2024;NA;Atlantic N;3882;Norway;Norway Small Whale;Apr;2024;Sep;2024;0;0;0;0;0;0;0;415;0;0;0;0;0;415;Co;"CO(O); IR";"EB:268; EN:2; ES:71; EW:74";6
+2024;NP;Alaska N;1990;United States;Alaska Aboriginal;;;;;0;0;0;0;0;0;0;0;0;0;64;0;0;64;A;IR;awaiting US full report;15
+2024;NP;Alaska N;1990;United States;Alaska Aboriginal;;;;;0;0;0;0;0;0;0;0;0;0;2;0;0;2;I;IR;;0
+2024;NA;Greenland E;3280;Denmark;E.Greenland Aboriginal;Jul;2024;Oct;2024;0;0;0;0;0;0;0;13;0;0;0;0;0;13;A;CO(O);;0
+2024;NA;Greenland W;3270;Denmark;W.Greenland Aboriginal;Mar;2024;Oct;2024;0;0;2;0;1;0;0;130;0;0;0;0;0;133;A;CO(O);"also reported: 1 M Bhd  euthanised bycatch; 1 M Fin carcass; 1F and 1M Hbk bycatch and 1 F bycatch/struck and lost";
+2024;NP;Chukotka;1810;Russia;Russia Aboriginal;May;2024;Nov;2024;0;0;0;0;0;0;0;0;0;132;0;0;0;132;A;CO(O);;1
+2023;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Aug;2023;Aug;2023;0;0;0;0;0;0;0;0;0;0;3;0;0;3;A;CO(O);;0
+2024;NA;Canada HudsnBy;2001;Canada;Canada Aboriginal;Apr;2024;Mar;2023;0;0;0;0;0;0;0;0;0;0;2;0;0;2;A;CO(O);dates refer to harvest season;0
