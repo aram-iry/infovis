@@ -39,28 +39,20 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 import pandas as pd
 import csv
 import plotly.express as px
+from plotly.offline import init_notebook_mode
 
-wb_df = pd.read_csv('../data/iunc_whales_only.csv')
-wb_df.head(n=1000)
-
-
-fig = px.histogram(wb_df, x="redlistCategory")
-
-fig.update_layout(
-    title='Population trend',
-    height=600,
-    
-)
-fig.show()
+init_notebook_mode()
 ------------------
 
 
 [31m---------------------------------------------------------------------------[39m
 [31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 1[39m
-[32m----> [39m[32m1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 3[39m
+[32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
 [32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mcsv[39;00m
-[32m      3[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
+[32m----> [39m[32m3[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
+[32m      4[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01moffline[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m init_notebook_mode
+[32m      6[39m init_notebook_mode()
 
-[31mModuleNotFoundError[39m: No module named 'pandas'
+[31mModuleNotFoundError[39m: No module named 'plotly'
 
