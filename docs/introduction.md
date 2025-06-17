@@ -8,7 +8,7 @@ This data story explores the relationship between marine human activity and whal
 
 On one hand, the high number of endangered whale species (11 Endangered and 4 Critically Endangered) could demonstrate that current protections are insufficient. Industrial fishing and shipping may continue to threaten vulnerable populations, particularly those with limited habitats or migration routes. Stronger regulations, such as stricter bycatch mitigation, seasonal fishing bans in whale migration corridors, and speed limits for ships, could be essential to prevent further declines. 
 
-On the other hand, balancing economic needs with whale protection could be important too. While whale conservation is important, the fishing and shipping industries support millions of jobs and global food security. Instead of heavy-handed restrictions, policies could focus on sustainable coexistence—such as incentivizing whale-safe fishing gear, real-time whale tracking to avoid collisions, and compensating fishermen for lost catches due to conservation efforts. 
+On the other hand, balancing economic needs with whale protection could be important too. While whale conservation is important, the fishing and shipping industries support millions of jobs and global food security. Instead of heavy-handed restrictions, policies could focus on sustainable coexistence, such as incentivizing whale-safe fishing gear, real-time whale tracking to avoid collisions, and compensating fishermen for lost catches due to conservation efforts. 
 
 
 [Click here to read the data story](../notebooks/story.ipynb)
