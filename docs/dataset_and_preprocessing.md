@@ -10,8 +10,8 @@ We cleaned datasets that contained diverse animal species (such as a dataset inc
 
 Variables we extracted from all of our datasets can be classified under multiple variable types and measurement scales:
 
-- Nominal / Discrete: 'Population Trend', 'Red List Category', 'Species (or group)'
-- Continuous / Ratio: 'Longitude', 'Latitude', 'Observed Mortality Rate (per set)'
+- Nominal / Discrete: `Population Trend`, `Red List Category`, `Species (or group)`
+- Continuous / Ratio: `Longitude`, `Latitude`, `Observed Mortality Rate (per set)`
 
 ## Aggregations
 
