@@ -37,154 +37,89 @@ Traceback (most recent call last):
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 import pandas as pd
-import plotly.express as px
+import matplotlib.pyplot as plt
 
-df = pd.read_excel("../data/Direct-catches-summary-data-since-1985-V7_2-2025.xlsx", engine='openpyxl')
+# Load the data
+df = pd.read_csv('../data/Direct-catches-summary-data-since-1985-V7_2-2025.csv', sep=';')
 
-agg_df = df.groupby(["Year", "Nation"], as_index=False).agg({
-    "Total": "sum",
-    "TotalLost": "sum",
-    # add other columns if needed
-})
+# Group by year and sum the total catches
+yearly_totals = df.groupby('Year')['Total'].sum().reset_index()
 
-years = agg_df["Year"].unique()
-nations = agg_df["Nation"].unique()
-full_index = pd.MultiIndex.from_product([years, nations], names=["Year", "Nation"])
-agg_df_full = agg_df.set_index(["Year", "Nation"]).reindex(full_index, fill_value=0).reset_index()
+# Create the plot
+plt.figure(figsize=(12, 6))
+plt.bar(yearly_totals['Year'], yearly_totals['Total'], color='skyblue')
 
-agg_df_full = agg_df_full.sort_values(["Year", "Total"], ascending=[True, False])
-
-category_order = sorted(nations)
-
-from itertools import cycle
-
-# Base palette (extend if needed)
-base_colors = ["#0a2463", "#3a5ba0", "#5b8cff", "#87cefa", "#b3e0ff"]
-extra_colors = ["#1c3e7a", "#648bd8", "#9ac4f8", "#d0ecff", "#e6f5ff"]
-
-# Combine and cycle to ensure enough colors
-all_colors = base_colors + extra_colors
-color_cycle = cycle(all_colors)
-
-# Generate color mapping for each Nation
-unique_nations = sorted(agg_df_full["Nation"].unique())
-color_map = {nation: next(color_cycle) for nation in unique_nations}
-
-
-
-fig = px.bar(
-    
-    agg_df_full,
-    x="Nation",
-    y="Total",
-    color="Nation",
-    animation_frame="Year",
-    category_orders={"Nation": category_order},
-    title="Whale Catches (Total) by Nation per Year (All Countries Included)",
-    labels={"Total": "Number of Whales Caught"},
-    height=600,
-    color_discrete_map=color_map
-)
-
-fig.update_layout(
-    xaxis_title="Country",
-    yaxis_title="Total Whale Catches",
-    showlegend=False
-)
-
-max_total = agg_df_full["Total"].max()
-
-fig.update_yaxes(range=[0, max_total])
-
-fig.show()
-
-
-
+# Add labels and title
+plt.xlabel('Year')
+plt.ylabel('Total Whale Catches')
+plt.title('Total Whale Catches by Year (1985-2024)')
+plt.xticks(rotation=45)
 
 ------------------
 
 
 [31m---------------------------------------------------------------------------[39m
-[31mModuleNotFoundError[39m                       Traceback (most recent call last)
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/compat/_optional.py:135[39m, in [36mimport_optional_dependency[39m[34m(name, extra, errors, min_version)[39m
-[32m    134[39m [38;5;28;01mtry[39;00m:
-[32m--> [39m[32m135[39m     module = [43mimportlib[49m[43m.[49m[43mimport_module[49m[43m([49m[43mname[49m[43m)[49m
-[32m    136[39m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
+[31mFileNotFoundError[39m                         Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 5[39m
+[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mmatplotlib[39;00m[34;01m.[39;00m[34;01mpyplot[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mplt[39;00m
+[32m      4[39m [38;5;66;03m# Load the data[39;00m
+[32m----> [39m[32m5[39m df = [43mpd[49m[43m.[49m[43mread_csv[49m[43m([49m[33;43m'[39;49m[33;43m../data/Direct-catches-summary-data-since-1985-V7_2-2025.csv[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[43msep[49m[43m=[49m[33;43m'[39;49m[33;43m;[39;49m[33;43m'[39;49m[43m)[49m
+[32m      7[39m [38;5;66;03m# Group by year and sum the total catches[39;00m
+[32m      8[39m yearly_totals = df.groupby([33m'[39m[33mYear[39m[33m'[39m)[[33m'[39m[33mTotal[39m[33m'[39m].sum().reset_index()
 
-[36mFile [39m[32m~/miniconda3/lib/python3.13/importlib/__init__.py:88[39m, in [36mimport_module[39m[34m(name, package)[39m
-[32m     87[39m         level += [32m1[39m
-[32m---> [39m[32m88[39m [38;5;28;01mreturn[39;00m [43m_bootstrap[49m[43m.[49m[43m_gcd_import[49m[43m([49m[43mname[49m[43m[[49m[43mlevel[49m[43m:[49m[43m][49m[43m,[49m[43m [49m[43mpackage[49m[43m,[49m[43m [49m[43mlevel[49m[43m)[49m
+[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1026[39m, in [36mread_csv[39m[34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)[39m
+[32m   1013[39m kwds_defaults = _refine_defaults_read(
+[32m   1014[39m     dialect,
+[32m   1015[39m     delimiter,
+[32m   (...)[39m[32m   1022[39m     dtype_backend=dtype_backend,
+[32m   1023[39m )
+[32m   1024[39m kwds.update(kwds_defaults)
+[32m-> [39m[32m1026[39m [38;5;28;01mreturn[39;00m [43m_read[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43mkwds[49m[43m)[49m
 
-[36mFile [39m[32m<frozen importlib._bootstrap>:1387[39m, in [36m_gcd_import[39m[34m(name, package, level)[39m
+[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py:620[39m, in [36m_read[39m[34m(filepath_or_buffer, kwds)[39m
+[32m    617[39m _validate_names(kwds.get([33m"[39m[33mnames[39m[33m"[39m, [38;5;28;01mNone[39;00m))
+[32m    619[39m [38;5;66;03m# Create the parser.[39;00m
+[32m--> [39m[32m620[39m parser = [43mTextFileReader[49m[43m([49m[43mfilepath_or_buffer[49m[43m,[49m[43m [49m[43m*[49m[43m*[49m[43mkwds[49m[43m)[49m
+[32m    622[39m [38;5;28;01mif[39;00m chunksize [38;5;129;01mor[39;00m iterator:
+[32m    623[39m     [38;5;28;01mreturn[39;00m parser
 
-[36mFile [39m[32m<frozen importlib._bootstrap>:1360[39m, in [36m_find_and_load[39m[34m(name, import_)[39m
+[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1620[39m, in [36mTextFileReader.__init__[39m[34m(self, f, engine, **kwds)[39m
+[32m   1617[39m     [38;5;28mself[39m.options[[33m"[39m[33mhas_index_names[39m[33m"[39m] = kwds[[33m"[39m[33mhas_index_names[39m[33m"[39m]
+[32m   1619[39m [38;5;28mself[39m.handles: IOHandles | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m
+[32m-> [39m[32m1620[39m [38;5;28mself[39m._engine = [38;5;28;43mself[39;49m[43m.[49m[43m_make_engine[49m[43m([49m[43mf[49m[43m,[49m[43m [49m[38;5;28;43mself[39;49m[43m.[49m[43mengine[49m[43m)[49m
 
-[36mFile [39m[32m<frozen importlib._bootstrap>:1324[39m, in [36m_find_and_load_unlocked[39m[34m(name, import_)[39m
+[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1880[39m, in [36mTextFileReader._make_engine[39m[34m(self, f, engine)[39m
+[32m   1878[39m     [38;5;28;01mif[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m mode:
+[32m   1879[39m         mode += [33m"[39m[33mb[39m[33m"[39m
+[32m-> [39m[32m1880[39m [38;5;28mself[39m.handles = [43mget_handle[49m[43m([49m
+[32m   1881[39m [43m    [49m[43mf[49m[43m,[49m
+[32m   1882[39m [43m    [49m[43mmode[49m[43m,[49m
+[32m   1883[39m [43m    [49m[43mencoding[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1884[39m [43m    [49m[43mcompression[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mcompression[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1885[39m [43m    [49m[43mmemory_map[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mmemory_map[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m[43m,[49m
+[32m   1886[39m [43m    [49m[43mis_text[49m[43m=[49m[43mis_text[49m[43m,[49m
+[32m   1887[39m [43m    [49m[43merrors[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mencoding_errors[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[33;43m"[39;49m[33;43mstrict[39;49m[33;43m"[39;49m[43m)[49m[43m,[49m
+[32m   1888[39m [43m    [49m[43mstorage_options[49m[43m=[49m[38;5;28;43mself[39;49m[43m.[49m[43moptions[49m[43m.[49m[43mget[49m[43m([49m[33;43m"[39;49m[33;43mstorage_options[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m,[49m
+[32m   1889[39m [43m[49m[43m)[49m
+[32m   1890[39m [38;5;28;01massert[39;00m [38;5;28mself[39m.handles [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[32m   1891[39m f = [38;5;28mself[39m.handles.handle
 
-[31mModuleNotFoundError[39m: No module named 'openpyxl'
+[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/common.py:873[39m, in [36mget_handle[39m[34m(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)[39m
+[32m    868[39m [38;5;28;01melif[39;00m [38;5;28misinstance[39m(handle, [38;5;28mstr[39m):
+[32m    869[39m     [38;5;66;03m# Check whether the filename is to be opened in binary mode.[39;00m
+[32m    870[39m     [38;5;66;03m# Binary mode does not support 'encoding' and 'newline'.[39;00m
+[32m    871[39m     [38;5;28;01mif[39;00m ioargs.encoding [38;5;129;01mand[39;00m [33m"[39m[33mb[39m[33m"[39m [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m ioargs.mode:
+[32m    872[39m         [38;5;66;03m# Encoding[39;00m
+[32m--> [39m[32m873[39m         handle = [38;5;28;43mopen[39;49m[43m([49m
+[32m    874[39m [43m            [49m[43mhandle[49m[43m,[49m
+[32m    875[39m [43m            [49m[43mioargs[49m[43m.[49m[43mmode[49m[43m,[49m
+[32m    876[39m [43m            [49m[43mencoding[49m[43m=[49m[43mioargs[49m[43m.[49m[43mencoding[49m[43m,[49m
+[32m    877[39m [43m            [49m[43merrors[49m[43m=[49m[43merrors[49m[43m,[49m
+[32m    878[39m [43m            [49m[43mnewline[49m[43m=[49m[33;43m"[39;49m[33;43m"[39;49m[43m,[49m
+[32m    879[39m [43m        [49m[43m)[49m
+[32m    880[39m     [38;5;28;01melse[39;00m:
+[32m    881[39m         [38;5;66;03m# Binary mode[39;00m
+[32m    882[39m         handle = [38;5;28mopen[39m(handle, ioargs.mode)
 
-During handling of the above exception, another exception occurred:
-
-[31mImportError[39m                               Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 4[39m
-[32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
-[32m----> [39m[32m4[39m df = [43mpd[49m[43m.[49m[43mread_excel[49m[43m([49m[33;43m"[39;49m[33;43m../data/Direct-catches-summary-data-since-1985-V7_2-2025.xlsx[39;49m[33;43m"[39;49m[43m,[49m[43m [49m[43mengine[49m[43m=[49m[33;43m'[39;49m[33;43mopenpyxl[39;49m[33;43m'[39;49m[43m)[49m
-[32m      6[39m agg_df = df.groupby([[33m"[39m[33mYear[39m[33m"[39m, [33m"[39m[33mNation[39m[33m"[39m], as_index=[38;5;28;01mFalse[39;00m).agg({
-[32m      7[39m     [33m"[39m[33mTotal[39m[33m"[39m: [33m"[39m[33msum[39m[33m"[39m,
-[32m      8[39m     [33m"[39m[33mTotalLost[39m[33m"[39m: [33m"[39m[33msum[39m[33m"[39m,
-[32m      9[39m     [38;5;66;03m# add other columns if needed[39;00m
-[32m     10[39m })
-[32m     12[39m years = agg_df[[33m"[39m[33mYear[39m[33m"[39m].unique()
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/excel/_base.py:495[39m, in [36mread_excel[39m[34m(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)[39m
-[32m    493[39m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28misinstance[39m(io, ExcelFile):
-[32m    494[39m     should_close = [38;5;28;01mTrue[39;00m
-[32m--> [39m[32m495[39m     io = [43mExcelFile[49m[43m([49m
-[32m    496[39m [43m        [49m[43mio[49m[43m,[49m
-[32m    497[39m [43m        [49m[43mstorage_options[49m[43m=[49m[43mstorage_options[49m[43m,[49m
-[32m    498[39m [43m        [49m[43mengine[49m[43m=[49m[43mengine[49m[43m,[49m
-[32m    499[39m [43m        [49m[43mengine_kwargs[49m[43m=[49m[43mengine_kwargs[49m[43m,[49m
-[32m    500[39m [43m    [49m[43m)[49m
-[32m    501[39m [38;5;28;01melif[39;00m engine [38;5;129;01mand[39;00m engine != io.engine:
-[32m    502[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
-[32m    503[39m         [33m"[39m[33mEngine should not be specified when passing [39m[33m"[39m
-[32m    504[39m         [33m"[39m[33man ExcelFile - ExcelFile already has the engine set[39m[33m"[39m
-[32m    505[39m     )
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/excel/_base.py:1567[39m, in [36mExcelFile.__init__[39m[34m(self, path_or_buffer, engine, storage_options, engine_kwargs)[39m
-[32m   1564[39m [38;5;28mself[39m.engine = engine
-[32m   1565[39m [38;5;28mself[39m.storage_options = storage_options
-[32m-> [39m[32m1567[39m [38;5;28mself[39m._reader = [38;5;28;43mself[39;49m[43m.[49m[43m_engines[49m[43m[[49m[43mengine[49m[43m][49m[43m([49m
-[32m   1568[39m [43m    [49m[38;5;28;43mself[39;49m[43m.[49m[43m_io[49m[43m,[49m
-[32m   1569[39m [43m    [49m[43mstorage_options[49m[43m=[49m[43mstorage_options[49m[43m,[49m
-[32m   1570[39m [43m    [49m[43mengine_kwargs[49m[43m=[49m[43mengine_kwargs[49m[43m,[49m
-[32m   1571[39m [43m[49m[43m)[49m
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/excel/_openpyxl.py:552[39m, in [36mOpenpyxlReader.__init__[39m[34m(self, filepath_or_buffer, storage_options, engine_kwargs)[39m
-[32m    534[39m [38;5;129m@doc[39m(storage_options=_shared_docs[[33m"[39m[33mstorage_options[39m[33m"[39m])
-[32m    535[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m__init__[39m(
-[32m    536[39m     [38;5;28mself[39m,
-[32m   (...)[39m[32m    539[39m     engine_kwargs: [38;5;28mdict[39m | [38;5;28;01mNone[39;00m = [38;5;28;01mNone[39;00m,
-[32m    540[39m ) -> [38;5;28;01mNone[39;00m:
-[32m    541[39m [38;5;250m    [39m[33;03m"""[39;00m
-[32m    542[39m [33;03m    Reader using openpyxl engine.[39;00m
-[32m    543[39m 
-[32m   (...)[39m[32m    550[39m [33;03m        Arbitrary keyword arguments passed to excel engine.[39;00m
-[32m    551[39m [33;03m    """[39;00m
-[32m--> [39m[32m552[39m     [43mimport_optional_dependency[49m[43m([49m[33;43m"[39;49m[33;43mopenpyxl[39;49m[33;43m"[39;49m[43m)[49m
-[32m    553[39m     [38;5;28msuper[39m().[34m__init__[39m(
-[32m    554[39m         filepath_or_buffer,
-[32m    555[39m         storage_options=storage_options,
-[32m    556[39m         engine_kwargs=engine_kwargs,
-[32m    557[39m     )
-
-[36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/compat/_optional.py:138[39m, in [36mimport_optional_dependency[39m[34m(name, extra, errors, min_version)[39m
-[32m    136[39m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
-[32m    137[39m     [38;5;28;01mif[39;00m errors == [33m"[39m[33mraise[39m[33m"[39m:
-[32m--> [39m[32m138[39m         [38;5;28;01mraise[39;00m [38;5;167;01mImportError[39;00m(msg)
-[32m    139[39m     [38;5;28;01mreturn[39;00m [38;5;28;01mNone[39;00m
-[32m    141[39m [38;5;66;03m# Handle submodules: if we have submodule, grab parent module from sys.modules[39;00m
-
-[31mImportError[39m: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[31mFileNotFoundError[39m: [Errno 2] No such file or directory: '../data/Direct-catches-summary-data-since-1985-V7_2-2025.csv'
 
