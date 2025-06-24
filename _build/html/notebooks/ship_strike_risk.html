@@ -431,21 +431,12 @@ document.write(`
 <span class="c1"># Load the data</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/aggregated_whale_data.csv&#39;</span><span class="p">)</span>
 
-<span class="n">blue_gradient</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;#b3e0ff&#39;</span><span class="p">],</span> 
-    <span class="p">[</span><span class="mf">0.36</span><span class="p">,</span> <span class="s1">&#39;#5b8cff&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="s1">&#39;#3a5ba0&#39;</span><span class="p">],</span>  
-    <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;#0a2463&#39;</span><span class="p">]</span>  
-<span class="p">]</span>
-
 <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Densitymap</span><span class="p">(</span>
     <span class="n">lat</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat_bin&#39;</span><span class="p">],</span>
     <span class="n">lon</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lon_bin&#39;</span><span class="p">],</span>
     <span class="n">z</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;all.risk&#39;</span><span class="p">],</span> 
     <span class="n">radius</span><span class="o">=</span><span class="mf">5.4</span><span class="p">,</span>
-    <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">colorscale</span><span class="o">=</span><span class="n">blue_gradient</span><span class="p">,</span>
-    <span class="n">reversescale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+    <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
     <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
         <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Risk Index&#39;</span><span class="p">,</span>
         <span class="n">title_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span>
