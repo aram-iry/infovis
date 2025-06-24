@@ -18,7 +18,7 @@ repository:
   branch: main 
 
 html:
-  favicon:  _build/html/_static/images/favicon.ico
+  favicon:  _build/html/_static/favicon.ico
   use_issues_button: true
   use_repository_button: true
   theme:
