@@ -36,14 +36,14 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-%run whale_catches_country.ipynb
+%run gdp2.ipynb
 ------------------
 
 
 [31m---------------------------------------------------------------------------[39m
 [31mFileNotFoundError[39m                         Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[6][39m[32m, line 1[39m
-[32m----> [39m[32m1[39m [43mget_ipython[49m[43m([49m[43m)[49m[43m.[49m[43mrun_line_magic[49m[43m([49m[33;43m'[39;49m[33;43mrun[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[33;43m'[39;49m[33;43mwhale_catches_country.ipynb[39;49m[33;43m'[39;49m[43m)[49m
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m [43mget_ipython[49m[43m([49m[43m)[49m[43m.[49m[43mrun_line_magic[49m[43m([49m[33;43m'[39;49m[33;43mrun[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[33;43m'[39;49m[33;43mgdp2.ipynb[39;49m[33;43m'[39;49m[43m)[49m
 
 [36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/IPython/core/interactiveshell.py:2488[39m, in [36mInteractiveShell.run_line_magic[39m[34m(self, magic_name, line, _stack_depth)[39m
 [32m   2486[39m     kwargs[[33m'[39m[33mlocal_ns[39m[33m'[39m] = [38;5;28mself[39m.get_local_scope(stack_depth)
@@ -75,12 +75,12 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 
     [31m[... skipping hidden 1 frame][39m
 
-[36mFile [39m[32m/tmp/ipykernel_12548/1391112121.py:5[39m
-[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mmatplotlib[39;00m[34;01m.[39;00m[34;01mpyplot[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mplt[39;00m
-[32m      4[39m [38;5;66;03m# Load the data[39;00m
-[32m----> [39m[32m5[39m df = [43mpd[49m[43m.[49m[43mread_csv[49m[43m([49m[33;43m'[39;49m[33;43m../data/Direct-catches-summary-data-since-1985-V7_2-2025.csv[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[43msep[49m[43m=[49m[33;43m'[39;49m[33;43m;[39;49m[33;43m'[39;49m[43m)[49m
-[32m      7[39m [38;5;66;03m# Group by year and sum the total catches[39;00m
-[32m      8[39m yearly_totals = df.groupby([33m'[39m[33mYear[39m[33m'[39m)[[33m'[39m[33mTotal[39m[33m'[39m].sum().reset_index()
+[36mFile [39m[32m/tmp/ipykernel_8437/2072832842.py:9[39m
+[32m      6[39m [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01moffline[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m init_notebook_mode
+[32m      7[39m init_notebook_mode()
+[32m----> [39m[32m9[39m df = [43mpd[49m[43m.[49m[43mread_csv[49m[43m([49m[33;43m'[39;49m[33;43mcapture_fisheries.csv[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[43mskiprows[49m[43m=[49m[32;43m4[39;49m[43m)[49m
+[32m     10[39m df = df.dropna(how=[33m'[39m[33mall[39m[33m'[39m)
+[32m     12[39m df[[33m'[39m[33mCountry Name[39m[33m'[39m] = df[[33m'[39m[33mCountry Name[39m[33m'[39m].str.replace([33m'[39m[33m"[39m[33m'[39m, [33m'[39m[33m'[39m)
 
 [36mFile [39m[32m~/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py:1026[39m, in [36mread_csv[39m[34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)[39m
 [32m   1013[39m kwds_defaults = _refine_defaults_read(
@@ -136,5 +136,5 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 [32m    881[39m         [38;5;66;03m# Binary mode[39;00m
 [32m    882[39m         handle = [38;5;28mopen[39m(handle, ioargs.mode)
 
-[31mFileNotFoundError[39m: [Errno 2] No such file or directory: '../data/Direct-catches-summary-data-since-1985-V7_2-2025.csv'
+[31mFileNotFoundError[39m: [Errno 2] No such file or directory: 'capture_fisheries.csv'
 
