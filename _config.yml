@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Whales and the Fishing Industry
+title: The Impact of Human Activity on Whale Populations
 author: Group 21; Walvis
-logo: _build/html/_static/images/logo.png
+# logo: _build/html/_static/images/logo.png
 
 execute:
   execute_notebooks: force
