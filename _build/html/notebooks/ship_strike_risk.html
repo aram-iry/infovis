@@ -447,10 +447,10 @@ document.write(`
     <span class="n">colorscale</span><span class="o">=</span><span class="n">blue_gradient</span><span class="p">,</span>
     <span class="n">reversescale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
     <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
-        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Probability&#39;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Risk Index&#39;</span><span class="p">,</span>
         <span class="n">title_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span>
         <span class="n">title_font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span>
-        <span class="n">xpad</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+        <span class="n">xpad</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
     <span class="p">),</span>
     <span class="n">hovertemplate</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Lat:&lt;/b&gt; %</span><span class="si">{lat:.1f}</span><span class="s1">°&lt;br&gt;&#39;</span> <span class="o">+</span>
                   <span class="s1">&#39;&lt;b&gt;Lon:&lt;/b&gt; %</span><span class="si">{lon:.1f}</span><span class="s1">°&lt;br&gt;&#39;</span> <span class="o">+</span>
@@ -459,44 +459,64 @@ document.write(`
 
 
 <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
-    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Global Ship Strike Risk for Four Whale Species&#39;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;b&gt;Whale Ship Strike Risk&lt;/b&gt;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">,</span>
+        <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span>
+    <span class="p">},</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">500</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#0a2463&#39;</span><span class="p">)</span>
 <span class="p">)</span>
 
-<span class="c1"># Add dropdown menu for different risk types</span>
-<span class="n">risk_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;shipping.index&#39;</span><span class="p">]</span>
+<span class="n">risk_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">]</span>
 
 <span class="n">label_map</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Blue/Fin/Humpback/Sperm Whales&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;all.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;Whale Risk Index&#39;</span><span class="p">),</span>
-    <span class="s1">&#39;Blue Whale&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;Blue Whale Risk Index&#39;</span><span class="p">),</span>
-    <span class="s1">&#39;Fin Whale&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;Fin Whale Risk Index&#39;</span><span class="p">),</span>
-    <span class="s1">&#39;Humpback Whale&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;Humpback Whale Risk Index&#39;</span><span class="p">),</span>
-    <span class="s1">&#39;Sperm Whale&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;sperm.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;Sperm Whale Risk Index&#39;</span><span class="p">),</span>
-    <span class="s1">&#39;Shipping Density&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;shipping.index&#39;</span><span class="p">,</span> <span class="s1">&#39;Shipping Density Index&#39;</span><span class="p">)</span>
+    <span class="s1">&#39;Blue/Fin/Humpback/Sperm&#39;</span><span class="p">:</span> <span class="s1">&#39;all.risk&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Blue Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Fin Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Humpback Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Sperm Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="n">buttons</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">colorbar_title</span><span class="p">)</span> <span class="ow">in</span> <span class="n">label_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">label_map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">buttons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span>
         <span class="n">method</span><span class="o">=</span><span class="s1">&#39;update&#39;</span><span class="p">,</span>
         <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
-        <span class="n">args</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]]},</span>
-              <span class="p">{</span><span class="s1">&#39;colorbar&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">colorbar_title</span><span class="p">}}]</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">]]}]</span>
     <span class="p">))</span>
 
 <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;l&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">130</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">},</span>
     <span class="n">updatemenus</span><span class="o">=</span><span class="p">[{</span>
         <span class="s1">&#39;buttons&#39;</span><span class="p">:</span> <span class="n">buttons</span><span class="p">,</span>
         <span class="s1">&#39;direction&#39;</span><span class="p">:</span> <span class="s1">&#39;down&#39;</span><span class="p">,</span>
         <span class="s1">&#39;showactive&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">,</span>
+        <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.78</span><span class="p">,</span>
         <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+        <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">1.12</span><span class="p">,</span>
         <span class="s1">&#39;yanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;top&#39;</span>
     <span class="p">}]</span>
 <span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.27</span><span class="p">,</span>
+                   <span class="n">xref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> <span class="n">yref</span><span class="o">=</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span>
+                   <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                   <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+                   <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+                   <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Ship strike risk for four whale species across the world&#39;s oceans. &lt;br&gt;&quot;</span> <span class="o">+</span> \
+                        <span class="s1">&#39;Ship strike risk index is the product of whale space use index (mean probability of occurrence, scaled), &lt;br&gt;&#39;</span><span class="o">+</span> \
+                        <span class="s1">&#39;and shipping traffic index (Log-transformed shipping traffic, scaled).&#39;</span>
+                        <span class="s1">&#39;Toggle different whale species with the drop-down menu on the upper-right hand corner.&#39;</span> <span class="o">+</span>\
+                        <span class="s1">&#39;Hover to see risk index at specific longitudes and latitudes&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_annotations</span><span class="p">(</span>
+    <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#0a2463&#39;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_coloraxes</span><span class="p">(</span><span class="n">colorbar_title_font_color</span><span class="o">=</span><span class="s1">&#39;#0a2463&#39;</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
