@@ -3,7 +3,7 @@
 
 title: The Impact of Human Activity on Whale Populations
 author: Group 21; Walvis
-# logo: _build/html/_static/images/logo.png
+logo: _build/html/_images/whale_hey.png
 
 execute:
   execute_notebooks: force
