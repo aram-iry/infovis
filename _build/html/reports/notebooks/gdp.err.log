@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 154, in wrapped
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 154, in wrapped
     asyncio.get_running_loop()
     ~~~~~~~~~~~~~~~~~~~~~~~~^^
 RuntimeError: no running event loop
@@ -7,7 +7,7 @@ RuntimeError: no running event loop
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
     ~~~~~~~~~^
         nb,
@@ -17,34 +17,34 @@ Traceback (most recent call last):
         ^^^^^^^^^
     )
     ^
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 158, in wrapped
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 158, in wrapped
     return loop.run_until_complete(inner)
            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/aram/miniconda3/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
     return future.result()
            ~~~~~~~~~~~~~^^
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
     await self.async_execute_cell(
         cell, index, execution_count=self.code_cells_executed + 1
     )
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/home/aram/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+  File "/home/fien-de-boer/miniconda3/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
 import pandas as pd
 import plotly.express as px
+
+from plotly.offline import init_notebook_mode
 init_notebook_mode()
 
-# Read the CSV file with proper parameters
-df = pd.read_csv('../data/capture_fisheries.csv', skiprows=4)  # Skip the header rows
-df = df.dropna(how='all')  # Drop empty rows
+df = pd.read_csv('../data/capture_fisheries.csv', skiprows=4)
+df = df.dropna(how='all')
 
-# Melt the DataFrame to transform years into rows
 years = [str(year) for year in range(1960, 2025)]
 df_melted = df.melt(
     id_vars=["Country Name", "Country Code", "Indicator Name", "Indicator Code"],
@@ -53,37 +53,53 @@ df_melted = df.melt(
     value_name="Capture Production (metric tons)"
 )
 
-# Convert to numeric and clean data
 df_melted['Year'] = pd.to_numeric(df_melted['Year'])
 df_melted['Capture Production (metric tons)'] = pd.to_numeric(
     df_melted['Capture Production (metric tons)'], errors='coerce'
 )
 df_melted = df_melted.dropna(subset=['Capture Production (metric tons)'])
 
-# Calculate world totals by year
 world_totals = df_melted.groupby('Year')['Capture Production (metric tons)'].sum().reset_index()
 
-# Create the visualization
 fig = px.line(
     world_totals,
     x='Year',
     y='Capture Production (metric tons)',
-    title='World Total Capture Fisheries Production (1960-2024)',
     labels={'Capture Production (metric tons)': 'Total Capture (metric tons)'},
+    color_discrete_sequence=['#87cefa'],
     markers=True
 )
 
-# Customize the layout
 fig.update_layout(
     xaxis_title='Year',
     yaxis_title='Total Capture Production (metric tons)',
     hovermode='x unified',
     showlegend=False,
-    template='plotly_white'
+    template='plotly_white',
+    font=dict(color='#0a2463'),
+    margin={'l': 30, 'b': 130, 'r': 30, 't': 30},
+    title={
+        'text': '<b>Global Capture Fisheries Production (1960-2024)</b>',
+        'x': 0.5,
+        'xanchor': 'center',  
+    }
 )
 
 fig.update_traces(
     hovertemplate='<b>Year:</b> %{x}<br><b>Total Capture:</b> %{y:,} metric tons'
+)
+
+fig.add_annotation(x=-0.02, y=-0.27,
+                   xref="paper", yref="paper",
+                   showarrow=False,
+                   align='left',
+                   xanchor='left', yanchor='bottom',
+                   text="World total capture fisheries production for the years 1960-2024. <br>" + \
+                        'Capture fisheries refer to the harvesting of wild fish and seafood from natural water bodies such as oceans, rivers, <br> ' + \ 
+                        'and lakes. Hover to see specific data for different years.')
+
+fig.update_annotations(
+    font=dict(color='#0a2463')
 )
 
 fig.show()
@@ -92,14 +108,10 @@ fig.show()
 ------------------
 
 
-[31m---------------------------------------------------------------------------[39m
-[31mNameError[39m                                 Traceback (most recent call last)
-[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 3[39m
-[32m      1[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpd[39;00m
-[32m      2[39m [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mplotly[39;00m[34;01m.[39;00m[34;01mexpress[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mpx[39;00m
-[32m----> [39m[32m3[39m [43minit_notebook_mode[49m()
-[32m      5[39m [38;5;66;03m# Read the CSV file with proper parameters[39;00m
-[32m      6[39m df = pd.read_csv([33m'[39m[33m../data/capture_fisheries.csv[39m[33m'[39m, skiprows=[32m4[39m)  [38;5;66;03m# Skip the header rows[39;00m
+  [36mCell[39m[36m [39m[32mIn[1][39m[32m, line 60[39m
+[31m    [39m[31m'Capture fisheries refer to the harvesting of wild fish and seafood from natural water bodies such as oceans, rivers, <br> ' + \[39m
+                                                                                                                                     
+^
+[31mSyntaxError[39m[31m:[39m unexpected character after line continuation character
 
-[31mNameError[39m: name 'init_notebook_mode' is not defined
 
