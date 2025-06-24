@@ -238,7 +238,7 @@ a.headerlink {
 }
 
 a:visited {
-    color: #551A8B;
+    color: #1a278b;
 }
 
 h1:hover > a.headerlink,
@@ -513,7 +513,7 @@ table.hlist td {
 }
 
 .sig-name, code.descname {
-    background-color: transparent;
+    background-: transparent;
     font-weight: bold;
 }
 
@@ -560,7 +560,7 @@ code.descname {
 
 .sig.c   .s, .sig.c   .sc,
 .sig.cpp .s, .sig.cpp .sc {
-	color: #067D17;
+	color: #062c7d;
 }
 
 
@@ -690,11 +690,11 @@ dl > dd:last-child > :last-child {
 }
 
 dt:target, span.highlighted {
-    background-color: #fbe54e;
+    background-color: #4e65fb;
 }
 
 rect.highlighted {
-    fill: #fbe54e;
+    fill: #4e7ffb;
 }
 
 dl.glossary dt {
