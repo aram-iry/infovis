@@ -8,12 +8,18 @@ found datasets and started discussing potential visualizations we could create. 
 were then created, and this gave us a general idea of where we wanted to take the data story, so 
 there would be a complete narrative around these graphs, which eventually led to our draft. The rest of
 the time we had for this project was used to improve areas like design of the Jupyter Notebook, the data story
-itself, and the visualizations. Then concidering all the feedback we could get our hands on, we created the final data story.
+itself, and the visualizations. Then considering all the feedback we could get our hands on, we created the final data story.
 
 ## Aram
 
+
+
 ## Josephine
 
+
+
 ## Thomas
+
+Initially helped with finding datasets we could base our story on, helped create some of the graphs and wrote most of the data story in general. In the last week of the project I assisted in finishing up of course, making sure every little detail was correct.
 
 ## Mina
