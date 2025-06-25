@@ -7,6 +7,8 @@ logo: _build/html/_static/images/whale_heyguys3.png
 
 execute:
   execute_notebooks: force
+  allow_errors: false
+  exclude_patterns: []
 
 latex:
   latex_documents:
@@ -27,12 +29,17 @@ html:
       icon: "sun"
       show: false
     default_mode: "light"
+  extra_footer: ""
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
 
 # Add launch buttons
 launch_buttons:
   binderhub_url: ""
   colab_url: "https://colab.research.google.com"
   jupyterhub_url: ""
+  notebook_interface: "jupyterlab"
 
 sphinx:
   extra_extensions:
@@ -57,4 +64,6 @@ hide_code_cells:
   remove_output: false
   remove_prompt: false
 
-
+parse:
+  myst_enable_extensions:
+    - colon_fence
