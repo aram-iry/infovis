@@ -184,6 +184,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset and preprocessing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/story.html">The Impact of Human Activity on Whale Populations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="work_distribution.html">Work Distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Sources</a></li>
 </ul>
 
@@ -380,9 +381,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-and-preparing-data">Cleaning and preparing data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
 </ul>
             </nav>
         </div>
@@ -397,11 +397,12 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="dataset-and-preprocessing">
 <h1>Dataset and preprocessing<a class="headerlink" href="#dataset-and-preprocessing" title="Link to this heading">#</a></h1>
 <p>To support our datastory with credible evidence, we used different sources to find relevant datasets that aligned with our topic, such as conservation databases, regional fisheries management databases, etc. We aimed to find data that was recent, diverse and comprehensive in scope in order to cover both aspects of the fishing industry and its documented impacts on whale populations.
-We used datasets containing general information on different whale species, fishing industries, ship strikes and bycatch information and more.</p>
-<section id="cleaning">
-<h2>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h2>
+We used datasets containing general information on different whale species, fishing industries, ship strikes and whale catches and more.</p>
+<section id="cleaning-and-preparing-data">
+<h2>Cleaning and preparing data<a class="headerlink" href="#cleaning-and-preparing-data" title="Link to this heading">#</a></h2>
 <p>We cleaned datasets that contained diverse animal species (such as a dataset including species’ populations trends and endangerment status) by filtering them to isolate whale species and exclude extraneous entries. We used ChatGPT to extract the relevant whale species’ names from the set of animal species’ names and then used Python and pandas to extract these from the datasets.</p>
-<p>Datasets that contained non-numeric values (for contintuous variables) or empty entries were cleaned by getting rid of these entries before aggregating.</p>
+<p>Datasets that contained non-numeric values (for continuous variables) or empty entries were cleaned by getting rid of these entries before aggregating.</p>
+<p>Some datasets needed to be created from multiple datasets. For example, the dataset which the graph of fishing revenue vs GDP was based on was created from 3 datasets. First, a dataset containing the total capture production in metric tonnes per year and a dataset containing global fish prices per metric tonne per year were merged based on year. This was used to calculate the annual revenue from the fishing industry which was made into a new dataset. This dataset was then merged with a dataset containing global GDP per year based on year to create the final dataset, which was easy to visualize for the datastory.</p>
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
@@ -410,36 +411,32 @@ We used datasets containing general information on different whale species, fish
 <li><p>Time &amp; Location</p>
 <ul class="simple">
 <li><p>year (Numerical/Discrete): The year of the recorded data.</p></li>
-<li><p>latitude (Numerical/Continuous): Geographic latitude of the fishing/whale event.</p></li>
-<li><p>longitude (Numerical/Continuous): Geographic longitude of the fishing/whale event.</p></li>
-<li><p>country (Categorical/Nominal): Country where the fishing/whale activity occurred.</p></li>
+<li><p>latitude (Numerical/Continuous): Geographic latitude of the record.</p></li>
+<li><p>longitude (Numerical/Continuous): Geographic longitude of the record.</p></li>
+<li><p>country (Categorical/Nominal): Country where the record occurred.</p></li>
 </ul>
 </li>
-<li><p>Fishing (Capture Production)</p>
+<li><p>Fishing Industry</p>
 <ul class="simple">
 <li><p>total capture production (Numerical/Continuous): Total fish caught.</p></li>
 <li><p>capture production (Numerical/Continuous): Fish caught in a specific context.</p></li>
+<li><p>fishing revenue (Numerical/Continuous): Total income generated generated by commercial fishing.</p></li>
+<li><p>gdp (Numerical/Continuous): Total value of all goods/services produced in a country per year.</p></li>
 </ul>
 </li>
 <li><p>Whale-Specific Variables</p>
 <ul class="simple">
-<li><p>species (Categorical/Nominal): Whale species involved.</p></li>
 <li><p>amount of whale species (Numerical/Discrete): Number of distinct whale species.</p></li>
 <li><p>endangerment classification (Categorical/Ordinal): Conservation status of whales.</p></li>
-<li><p>total whale catches (Numerical/Discrete): Total whales captured.</p></li>
 </ul>
 </li>
 <li><p>Risk &amp; Impact (Whales)</p>
 <ul class="simple">
 <li><p>strike risk (Numerical/Continuous or Categorical): Likelihood of vessel strikes on whales.</p></li>
-<li><p>mortality rate (Numerical/Continuous): Death rate of whales.</p></li>
+<li><p>total whale catches (Numerical/Discrete): Total whales captured.</p></li>
 </ul>
 </li>
 </ol>
-</section>
-<section id="aggregations">
-<h2>Aggregations<a class="headerlink" href="#aggregations" title="Link to this heading">#</a></h2>
-<p>For some datasets, aggregating was not necessary as they were usable in their original form. Other datasets existed of lots of tables which needed to be aggregated to be easier in use.</p>
 </section>
 </section>
 
@@ -507,9 +504,8 @@ We used datasets containing general information on different whale species, fish
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-and-preparing-data">Cleaning and preparing data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
 </ul>
   </nav></div>
 
