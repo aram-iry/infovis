@@ -1,7 +1,7 @@
 # Sources
 
 ## Datasets
-### Dataset sources, in order of appearance.
+<i>Dataset sources, in order of appearance.</i>
 
 GDP (current US$). (2023). World Bank Open Data. https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
 
