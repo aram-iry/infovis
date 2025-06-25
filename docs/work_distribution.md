@@ -20,6 +20,6 @@ itself, and the visualizations. Then considering all the feedback we could get o
 
 ## Thomas
 
-Initially helped with finding datasets we could base our story on, helped create some of the graphs and wrote most of the data story in general. In the last week of the project I assisted in finishing up of course, making sure every little detail was correct.
+Initially helped with finding datasets we could base our story on, helped create some of the graphs and wrote most of the data story in general. In the last week of the project I assisted in finishing up, making sure every little detail was correct.
 
 ## Mina
