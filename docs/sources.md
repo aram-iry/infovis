@@ -3,9 +3,15 @@
 ## Datasets
 Dataset sources, in order of appearance.
 
+GDP (current US$). (2023). World Bank Open Data. https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+
+Global Price of Fish. (2025). International Monetary Fund. https://fred.stlouisfed.org/series/PSALMUSDM
+
 Fish and seafood consumption per capita. (2023). Our World in Data. https://ourworldindata.org/grapher/fish-and-seafood-consumption-per-capita
 
+Per capita sources of protein. (2022). Our World in Data. https://ourworldindata.org/grapher/per-capita-sources-of-protein
 
+Global Whale-Ship Collision Risk Assessment Data. Nisi et al. (2024). Ocean Data Platform. https://app.hubocean.earth/catalog/collection/nisi-globalwhaleship
 
 ## Other sources
 
