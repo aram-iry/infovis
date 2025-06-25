@@ -8,4 +8,4 @@ Pauly, D., Watson, R., & Alder, J. (2005). Global trends in world fisheries: imp
 
 https://doi.org/10.1098/rstb.2004.1574 Stamation, K. (2008). Understanding human-whale interactions: a multidisciplinary approach. In Royal Zoological Society of New South Wales eBooks (pp. 211–224). https://doi.org/10.7882/fs.2008.025
 
-Fish and seafood consumption per capita. (2023, 10 maart). Our World in Data. https://ourworldindata.org/grapher/fish-and-seafood-consumption-per-capita
+Fish and seafood consumption per capita. (2023). Our World in Data. https://ourworldindata.org/grapher/fish-and-seafood-consumption-per-capita
