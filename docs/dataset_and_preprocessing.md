@@ -7,7 +7,7 @@ We used datasets containing general information on different whale species, fish
 
 We cleaned datasets that contained diverse animal species (such as a dataset including species' populations trends and endangerment status) by filtering them to isolate whale species and exclude extraneous entries. We used ChatGPT to extract the relevant whale species' names from the set of animal species' names and then used Python and pandas to extract these from the datasets. 
 
-Datasets that contained non-numeric values (for contintuous variables) or empty entries were cleaned by getting rid of these entries before aggregating.
+Datasets that contained non-numeric values (for continuous variables) or empty entries were cleaned by getting rid of these entries before aggregating.
 
 Some datasets needed to be created from multiple datasets. For example, the dataset which the graph of fishing revenue vs GDP was based on was created from 3 datasets. First, a dataset containing the total capture production in metric tonnes per year and a dataset containing global fish prices per metric tonne per year were merged based on year. This was used to calculate the annual revenue from the fishing industry which was made into a new dataset. This dataset was then merged with a dataset containing global GDP per year based on year to create the final dataset, which was easy to visualize for the datastory.
 
