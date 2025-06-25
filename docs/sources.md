@@ -1,7 +1,7 @@
 # Sources
 
 ## Datasets
-<i>Dataset sources, in order of appearance.</i>
+Dataset sources, in order of appearance.
 
 - [GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD). (2023). World Bank Open Data.  
 - [Global Price of Fish](https://fred.stlouisfed.org/series/PSALMUSDM). (2025). International Monetary Fund.  
