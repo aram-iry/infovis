@@ -1,6 +1,6 @@
 # Reflection
 
-Feedback
+## Feedback
 On 17 June, we had a peer review with group A3, where we had to give a short pitch about our project. Then we were assessed by the other group.
 
 We received compliments on the cleanliness and coherence of our graphs and the layout of our website. No areas for improvement were mentioned.
