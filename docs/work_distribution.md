@@ -11,7 +11,7 @@ the time we had for this project was used to improve areas like design of the Ju
 itself, and the visualizations. Then considering all the feedback we could get our hands on, we created the final data story.
 
 ## Aram
-Aram worked on creating several visualisations. On top of that, he worked on aggregating several datasets. He also presented the draft during the feedback round and contributed heavily on writing the reflection. Furthermore, he helped writing the text in the data story.
+Aram worked on creating several visualisations. On top of that, he worked on aggregating several datasets. He also presented the draft during the feedback round and wrote the reflection. Furthermore, he helped writing the text in the data story.
 
 ## Josephine
 
