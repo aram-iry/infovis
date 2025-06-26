@@ -3,13 +3,16 @@
 ## Datasets
 Dataset sources, in order of appearance.
 
+
+- [World Development Indicators: Capture fisheries production (metric tons)](https://databank.worldbank.org/source/world-development-indicators) World Bank Group (2025). World Bank
 - [GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD). (2023). World Bank Open Data.  
 - [Global Price of Fish](https://fred.stlouisfed.org/series/PSALMUSDM). (2025). International Monetary Fund.  
 - [Fish and seafood consumption per capita](https://ourworldindata.org/grapher/fish-and-seafood-consumption-per-capita). (2023). Our World in Data.  
 - [Per capita sources of protein](https://ourworldindata.org/grapher/per-capita-sources-of-protein). (2022). Our World in Data.  
 - [Global Whale-Ship Collision Risk Assessment Data](https://app.hubocean.earth/catalog/collection/nisi-globalwhaleship). Nisi et al. (2024). Ocean Data Platform.
 - [Endangerment Classification for Whale Species](https://www.iucnredlist.org/search?query=whale&searchType=species). IUCN (2025). IUCN Red List of Threatened Species.
-- [World Development Indicators: Capture fisheries production (metric tons)](https://databank.worldbank.org/source/world-development-indicators) World Bank Group (2025). World Bank
+- [Whale Catches](https://iwc.int/management-and-conservation/whaling/total-catches). International Whaling Commission (2024). International Whaling Commission
+
 
 ## Other sources
 
