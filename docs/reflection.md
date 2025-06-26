@@ -15,9 +15,5 @@ Overall, we are satisfied with the datastory we wrote. A nice, two-sided story e
 
 - Finding good datasets on whales. Looking for data was very time intensive as observing whales globally is not prioritised in science. This was quite frustrating at times, but we got better at reading up on the data before using it which did help.
 - Data did not match our expectations. This meant we sometimes had to adjust our story to make it more nuanced.
-- Some visualizations were first made with libraries that did not correctly work in the Jupyter Book. However, these were mostly easy fiex
-
-
-
-
-
+- Some visualizations were first made with libraries that did not correctly work in the Jupyter Book. However, these were mostly easy fixes.
+- We initially exceeded the word count limit by a significant margin. Due to this, we had to scrap around 35% of our existing text.
