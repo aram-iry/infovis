@@ -182,7 +182,7 @@
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../docs/dataset_and_preprocessing.html">Dataset and preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/dataset_and_preprocessing.html">Datasets and preprocessing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="story.html">The Impact of Human Activity on Whale Populations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docs/work_distribution.html">Work Distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docs/sources.html">Sources</a></li>
@@ -474,17 +474,16 @@ document.write(`
         <span class="s1">&#39;xanchor&#39;</span><span class="p">:</span> <span class="s1">&#39;center&#39;</span>
     <span class="p">},</span>
     <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">750</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">780</span><span class="p">,</span>
     <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
     <span class="n">font</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#0a2463&#39;</span><span class="p">)</span>
 <span class="p">)</span>
 
-<span class="n">risk_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">]</span>
+<span class="n">risk_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">]</span>
 
 <span class="n">label_map</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Blue/Fin/Humpback/Sperm&#39;</span><span class="p">:</span> <span class="s1">&#39;all.risk&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Blue/Humpback/Sperm&#39;</span><span class="p">:</span> <span class="s1">&#39;all.risk&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Blue Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;blue.risk&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;Fin Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;fin.risk&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Humpback Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;humpback.risk&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Sperm Whale&#39;</span><span class="p">:</span> <span class="s1">&#39;sperm.risk&#39;</span><span class="p">,</span>
 <span class="p">}</span>
@@ -515,7 +514,7 @@ document.write(`
                    <span class="n">showarrow</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                    <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
                    <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
-                   <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Ship strike risk for four whale species across the world&#39;s oceans. &lt;br&gt;&quot;</span> <span class="o">+</span> \
+                   <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Ship strike risk for three whale species across the world&#39;s oceans. &lt;br&gt;&quot;</span> <span class="o">+</span> \
                         <span class="s1">&#39;Ship strike risk index is the product of whale space use index (mean probability of occurrence, scaled), &lt;br&gt;&#39;</span><span class="o">+</span> \
                         <span class="s1">&#39;and shipping traffic index (Log-transformed shipping traffic, scaled).&lt;br&gt;&#39;</span><span class="o">+</span> \
                         <span class="s1">&#39;Toggle different whale species with the drop-down menu on the upper-right hand corner.&lt;br&gt;&#39;</span> <span class="o">+</span>\

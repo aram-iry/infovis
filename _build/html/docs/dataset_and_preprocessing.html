@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dataset and preprocessing &#8212; The Impact of Human Activity on Whale Populations</title>
+    <title>Datasets and preprocessing &#8212; The Impact of Human Activity on Whale Populations</title>
   
   
   
@@ -182,7 +182,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset and preprocessing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Datasets and preprocessing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/story.html">The Impact of Human Activity on Whale Populations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="work_distribution.html">Work Distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sources.html">Sources</a></li>
@@ -388,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dataset and preprocessing</h1>
+    <h1>Datasets and preprocessing</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -399,6 +399,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-and-preparing-data">Cleaning and preparing data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 </ul>
             </nav>
@@ -411,15 +412,21 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="dataset-and-preprocessing">
-<h1>Dataset and preprocessing<a class="headerlink" href="#dataset-and-preprocessing" title="Link to this heading">#</a></h1>
+  <section id="datasets-and-preprocessing">
+<h1>Datasets and preprocessing<a class="headerlink" href="#datasets-and-preprocessing" title="Link to this heading">#</a></h1>
 <p>To support our datastory with credible evidence, we used different sources to find relevant datasets that aligned with our topic, such as conservation databases, regional fisheries management databases, etc. We aimed to find data that was recent, diverse and comprehensive in scope in order to cover both aspects of the fishing industry and its documented impacts on whale populations.
 We used datasets containing general information on different whale species, fishing industries, ship strikes and whale catches and more.</p>
+<p>Dataset sources can be found on the <a class="reference internal" href="sources.html"><span class="std std-doc">Sources</span></a> page.</p>
 <section id="cleaning-and-preparing-data">
 <h2>Cleaning and preparing data<a class="headerlink" href="#cleaning-and-preparing-data" title="Link to this heading">#</a></h2>
 <p>We cleaned datasets that contained diverse animal species (such as a dataset including species’ populations trends and endangerment status) by filtering them to isolate whale species and exclude extraneous entries. We used ChatGPT to extract the relevant whale species’ names from the set of animal species’ names and then used Python and pandas to extract these from the datasets.</p>
-<p>Datasets that contained non-numeric values (for continuous variables) or empty entries were cleaned by getting rid of these entries before aggregating.</p>
-<p>Some datasets needed to be created from multiple datasets. For example, the dataset which the graph of fishing revenue vs GDP was based on was created from 3 datasets. First, a dataset containing the total capture production in metric tonnes per year and a dataset containing global fish prices per metric tonne per year were merged based on year. This was used to calculate the annual revenue from the fishing industry which was made into a new dataset. This dataset was then merged with a dataset containing global GDP per year based on year to create the final dataset, which was easy to visualize for the datastory.</p>
+<p>Datasets that contained non-numeric values (for continuous variables) or empty entries were cleaned by getting rid of these entries before using.</p>
+<p>Some datasets needed to be created from multiple datasets. For example, the dataset which the graph of fishing revenue vs GDP was based on was made from 3 datasets. First, a dataset containing the total capture production in metric tonnes per year and a dataset containing global fish prices per metric tonne per year were merged. This was used to calculate the annual revenue from the fishing industry which was made into a new dataset. This dataset was then merged with a dataset containing global GDP per year based on year to create the final dataset, which was easy to visualize for the datastory.</p>
+</section>
+<section id="aggregations">
+<h2>Aggregations<a class="headerlink" href="#aggregations" title="Link to this heading">#</a></h2>
+<p>Some datasets were usable immediately after cleaning, but others needed to undergo aggregations first. For example, the dataset used for the graph of global sources of dietary protein required multiple aggregation steps before it could be used: 1) summing protein sources by year to get global totals (collapsing country-level data into worldwide figures), 2) calculating yearly totals to establish the denominator for percentage contributions, 3) converting absolute values into percentages to show the relative share of each protein source (e.g., plant-based vs. animal-based) in the global diet over time. Without these aggregations, the data would have remained fragmented by country, making it impossible to observe worldwide trends in protein consumption patterns.
+Such aggregations were also done for multiple other datasets.</p>
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
@@ -522,6 +529,7 @@ We used datasets containing general information on different whale species, fish
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-and-preparing-data">Cleaning and preparing data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 </ul>
   </nav></div>
