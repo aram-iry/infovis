@@ -1,5 +1,7 @@
 # Information Visualisation: The Impact of Human Activity on Whale Populations
 
+![Banner](_build/html/_static/images/underwater.jpg)
+
 Our datastory explores the relationship between whales and human activity at sea, including fishing and shipping. Using a range of marine datasets, we visualise trends in global fisheries, protein consumption, ship strike risk, and whale vulnerability, offering a balanced view of both economic and ecological perspectives.
 
 ## What's inside?
