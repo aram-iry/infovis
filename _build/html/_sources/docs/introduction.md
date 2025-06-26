@@ -1,14 +1,8 @@
 # Introduction
 
-The world's oceans are home to some of the most majestic creatures on Earth - whales. These animals play a crucial role in maintaining the health of marine ecosystems, from regulating food chains to supporting the carbon cycle. However, human activities, including industrial fishing, overseas shipping, resource extraction, and pollution, are placing growing pressure on whale populations across the globe.
+Whales play a crucial role in marine ecosystems, but face increasing threats from industrial fishing and shipping activities. While industrial fishing and shipping support global food supplies and economies, these same industries drive whale population declines through ship collisions, gear entanglement, and habitat destruction.
 
-Modern fishing industries and overseas transport practices are essential for food security and coastal economies around the world. Yet, they can also lead to unintended consequences, such as the entanglement of whales in fishing gear, habitat disruption, and ship strikes. These impacts, while often underreported, raise important questions about how to balance marine resource use with species conservation.
-
-This data story explores the relationship between marine human activity and whales from two perspectives: the ecological urgency to protect vulnerable species, and the practical realities of sustaining ocean-based industries.
-
-On one hand, the high number of endangered whale species could demonstrate that current protection efforts are insufficient. Industrial fishing and shipping may continue to threaten vulnerable populations, particularly those with limited habitats or migration routes. Stronger regulations, such as stricter bycatch mitigation, seasonal fishing bans in whale migration corridors, and speed limits for ships, could be essential to prevent further declines. 
-
-On the other hand, balancing economic needs with whale protection could be important too. While whale conservation is important, the fishing and shipping industries support millions of jobs and global food security. Instead of heavy-handed restrictions, policies could focus on sustainable coexistence, such as incentivizing whale-safe fishing gear, real-time whale tracking to avoid collisions, and compensating fishermen for lost catches due to conservation efforts. 
+This story examines two perspectives. On one hand, many whale species are now endangered due to human activities. On the other hand, the fishing industry remains vital for global food security. 
 
 
 [Click here to read the data story](../notebooks/story.ipynb)
@@ -16,6 +10,6 @@ On the other hand, balancing economic needs with whale protection could be impor
 **Authors**
 
 - Aram Amiry
-- Josephine de Boer
+- Fien de Boer
 - Thomas Jansen
 - Mina Ruiten
