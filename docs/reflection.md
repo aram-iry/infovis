@@ -5,7 +5,7 @@ On 17 June, we had a peer review with group A3, where we had to give a short pit
 
 We received compliments on the cleanliness and coherence of our graphs and the layout of our website. No areas for improvement were mentioned.
 
-In addition, our draft was also reviewed by our TA, he was also very positive about the project. It was mentioned that it looked clean and professional. However, it was mentioned that the heatmaps in the ocean should not be in our blue theme, as this can be associated with water, which is confusing for readers. We took this feedback on board and changed the colour theme in this heatmap to another colour. Furthermore, as a general comment, not specific to our project, it was mentioned that we should pay a lot of attention to the rubric and to getting rid of error messages. We found all feedback valid, so we incorporated everything thoroughly and kept the thinking in mind.
+In addition, our draft was also reviewed by our TA, he was also very positive about the project. It was mentioned that it looked clean and professional. However, it was mentioned that the heatmaps in the ocean should not be in our blue theme, as this can be associated with water, which is confusing for readers. We took this feedback on board and changed the colour theme in this heatmap to another colour. Furthermore, as a general comment, not specific to our project, it was mentioned that we should pay a lot of attention to the rubric and to getting rid of error messages. We found all feedback valid, so we incorporated everything thoroughly and kept the general ideas behind the feedback in mind.
 
 ## Self-reflection
 
