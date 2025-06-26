@@ -1,19 +1,20 @@
 # Reflection
 
 ## (Peer) feedback
-Op 17 juni hebben wij een peerreview met groep A3, waarbij wij een korte pitch moesten geven over ons project. Daarna werden we door de andere groep beoordeeld.
+On 17 June, we had a peer review with group A3, where we had to give a short pitch about our project. Then we were assessed by the other group.
 
-We ontvingen complimenten over de cleanliness en coherence van onze grafieken en de layout van onze website. Er werden geen verbeterpunten genoemd.
+We received compliments on the cleanliness and coherence of our graphs and the layout of our website. No areas for improvement were mentioned.
 
-Daarnaast werd onze draft ook beoordeeld door onze TA, hij was ook erg positief over het project. Er werd benoemd dat het er clean en professional uitzag. Er werd wel benoemd dat de heatmaps in de ocean niet in ons blauwe thema moet staan, omdat dit geassocieerd kan worden met water, wat verwarrend is voor lezers. Deze feedback hebben wij meegenomen en we hebben het kleurenthema in deze heatmap veranderd naar een andere kleur. Verder werd als algemene opmerking, niet specifiek voor ons project, benoemd dat we veel aandacht moesten besteden aan de rubric en aan het wegwerken van foutmeldingen. Alle feedback vonden wij geldig, dus we hebben alles grondig verwerkt en de gedachtegang in ons achterhoofd gehouden.
+In addition, our draft was also reviewed by our TA, he was also very positive about the project. It was mentioned that it looked clean and professional. However, it was mentioned that the heatmaps in the ocean should not be in our blue theme, as this can be associated with water, which is confusing for readers. We took this feedback on board and changed the colour theme in this heatmap to another colour. Furthermore, as a general comment, not specific to our project, it was mentioned that we should pay a lot of attention to the rubric and to getting rid of error messages. We found all feedback valid, so we incorporated everything thoroughly and kept the thinking in mind.
 
-## Zelfreflectie
+## Self-reflection
 
-Over het algemeen zijn wij tevreden over de datastory die wij hebben geschreven. Er is een mooi, tweezijdig verhaal uit ons onderzoek voortgekomen over de overweging tussen de visvangst en het beschermen van walvissen. Wel zijn wij tegen een aantal problemen aangelopen.
+Overall, we are satisfied with the datastory we wrote. A nice, two-sided story emerged from our research about the consideration between fishing and protecting whales. However, we did run into a number of problems.
 
-Ten eerste was er een beperkt aantal goede datasets over walvissen. Er is veel tijd besteed om geschikte datasets te vinden, dit was helaas erg moeilijk aangezien walvissen wereldwijd observeren niet geprioriseerd wordt in de wetenschap. Een voorbeeld van een slechte dataset was een dataset met geographical coordinates, waaruit achteraf bleek dat na het plotten het een regionale dataset was. Vooral aan het begin hebben we veel moeite gestopt in het werken naar irrelevante bevindingen, hier hebben we van geleerd door ons eerst grondig in te lezen over de datasets die we gebruikten en hun limitaties. 
+Most importantly, there was a limited number of good datasets on whales. A lot of time was spent trying to find suitable datasets, this was unfortunately very difficult as observing whales globally is not prioritised in science. An example of a bad dataset was a dataset with geographical coordinates, which afterwards showed that after plotting, it was a regional dataset. Especially at the beginning, we put a lot of effort into working towards irrelevant findings; we learned from this by first reading up on the datasets we were using and their limitations thoroughly. 
 
-Daarnaast merkten we ook soms dat wij data hadden gevonden die niet overeenkwam met onze verwachtingen, zo hadden wij onderschat hoe belangrijk visproductie is voor de voeding van mensen wereldwijd. We hebben dus soms ons verhaal aangepast, om het wat genuanceerder te maken.
+In addition, we also sometimes noticed that we had found data that did not match our expectations, for example, we had underestimated how important fish production is to the nutrition of people worldwide. So, we sometimes adjusted our story to make it more nuanced.
+
 
 
 
