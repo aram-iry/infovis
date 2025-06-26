@@ -6,5 +6,6 @@ root: docs/introduction
 chapters:
 - file: docs/dataset_and_preprocessing
 - file: notebooks/story
+- file: docs/reflection
 - file: docs/work_distribution
 - file: docs/sources
