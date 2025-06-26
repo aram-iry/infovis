@@ -11,7 +11,7 @@ In addition, our draft was also reviewed by our TA, he was also very positive ab
 
 Overall, we are satisfied with the datastory we wrote. A nice, two-sided story emerged from our research about the consideration between fishing and protecting whales. However, we did run into a number of problems.
 
-Most importantly, there was a limited number of good datasets on whales. A lot of time was spent trying to find suitable datasets, this was unfortunately very difficult as observing whales globally is not prioritised in science. An example of a bad dataset was a dataset with geographical coordinates, which afterwards showed that after plotting, it was a regional dataset. Especially at the beginning, we put a lot of effort into working towards irrelevant findings; we learned from this by first reading up on the datasets we were using and their limitations thoroughly. 
+Most importantly, there was a limited number of good datasets on whales. A lot of time was spent trying to find suitable datasets, this was unfortunately very difficult as observing whales globally is not prioritised in science. An example of a bad dataset was a dataset with geographical coordinates, which afterwards showed that after plotting, was a regional dataset. Especially at the beginning, we put a lot of effort into working towards irrelevant findings; we learned from this by first reading up on the datasets we were using and their limitations with thoroughly. 
 
 In addition, we also sometimes noticed that we had found data that did not match our expectations, for example, we had underestimated how important fish production is to the nutrition of people worldwide. So, we sometimes adjusted our story to make it more nuanced.
 
