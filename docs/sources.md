@@ -10,6 +10,7 @@ Dataset sources, in order of appearance.
 - [Fish and seafood consumption per capita](https://ourworldindata.org/grapher/fish-and-seafood-consumption-per-capita). (2023). Our World in Data.  
 - [Per capita sources of protein](https://ourworldindata.org/grapher/per-capita-sources-of-protein). (2022). Our World in Data.  
 - [Global Whale-Ship Collision Risk Assessment Data](https://app.hubocean.earth/catalog/collection/nisi-globalwhaleship). Nisi et al. (2024). Ocean Data Platform.
+- [Satellite mapping reveals extensive industrial activity at sea: industrial_vessels_v20240102](https://figshare.com/articles/journal_contribution/Satellite_mapping_reveals_extensive_industrial_activity_at_sea_-_analysis_data/24309475?file=43882980).  Fernando Paolo, David Kroodsma, Pete Davis, Tim Hochberg (2024). Figshare 
 - [Endangerment Classification for Whale Species](https://www.iucnredlist.org/search?query=whale&searchType=species). IUCN (2025). IUCN Red List of Threatened Species.
 - [Whale Catches](https://iwc.int/management-and-conservation/whaling/total-catches). International Whaling Commission (2024). International Whaling Commission
 
