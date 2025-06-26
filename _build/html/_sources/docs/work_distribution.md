@@ -11,11 +11,10 @@ the time we had for this project was used to improve areas like design of the Ju
 itself, and the visualizations. Then considering all the feedback we could get our hands on, we created the final data story.
 
 ## Aram
-Aram worked on creating several visualisations. On top of that, he worked on aggregating several datasets. He also presented the draft during the feedback round and wrote the reflection. Furthermore, he helped writing the text in the data story.
+Aram worked on creating several visualisations. On top of that, he worked on aggregating several datasets. He also presented the draft during the feedback round and wrote the <i>Reflection</i> section. Furthermore, he helped writing the text in the data story.
 
-## Josephine
-
-
+## Fien
+Fien initially looked for datasets which she used to create several visualisations. She also wrote the <i>Introduction</i> and <i>Dataset and Preprocessing</i> sections, and helped in writing the data story itself. In addition, she focused on the overall presentation and aesthetics of the book and took a final editing role to perfect the visualizations and book in general.
 
 ## Thomas
 
