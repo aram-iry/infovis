@@ -13,7 +13,7 @@ Furthermore, as a general comment, not specific to our project, it was mentioned
 
 Overall, we are satisfied with the datastory we wrote. A nice, two-sided story emerged from our research about the consideration between fishing and protecting whales. However, we did run into a few problems:
 
-- Finding good datasets on whales. Looking for data was very time intensive as observing whales globally is not prioritised in science. Especially at the beginning, we put a lot of effort into working towards irrelevant findings; we learned from this by first reading up on the datasets we were using and their limitations with thoroughly. 
+- Finding good datasets on whales. Looking for data was very time intensive as observing whales globally is not prioritised in science. This was quite frustrating at times, but we got better at reading up on the data before using it which did help.
 - Data did not match our expectations. This meant we sometimes had to adjust our story to make it more nuanced.
 - Some visualizations were first made with libraries that did not correctly work in the Jupyter Book. However, these were mostly easy fiex
 
