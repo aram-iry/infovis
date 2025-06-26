@@ -3,7 +3,7 @@
 To support our datastory with credible evidence, we used different sources to find relevant datasets that aligned with our topic, such as conservation databases, regional fisheries management databases, etc. We aimed to find data that was recent, diverse and comprehensive in scope in order to cover both aspects of the fishing industry and its documented impacts on whale populations.
 We used datasets containing general information on different whale species, fishing industries, ship strikes and whale catches and more.
 
-Dataset sources can be found on the [Sources](sources.md) page.
+<i> Dataset sources can be found on the [Sources](sources.md) page. </i>
 
 ## Cleaning and preparing data
 
